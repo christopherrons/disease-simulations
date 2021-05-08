@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="disease_simulations"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/christopher/versioned/disease-simulations"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/christopher/versioned/disease-simulations"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/christopher/versioned/disease-simulations"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disease_simulations">
+				<Option output="/home/christopher/versioned/disease-simulations/disease_simulations" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christopher/versioned/disease-simulations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 disease_simulations"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="disease_simulations/fast">
+				<Option output="/home/christopher/versioned/disease-simulations/disease_simulations" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/christopher/versioned/disease-simulations"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 disease_simulations/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/christopher/versioned/disease-simulations/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/headers/simulations/RandomWalkSimulation.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/headers/subjects/Subject.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/headers/utils/GridUtils.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/headers/utils/RandomNumberGeneratorUtils.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/infection/Infection.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/infection/Infection.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/location/Location.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/location/Location.h">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/main.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/simulations/RandomWalkSimulation.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/subjects/Subject.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/utils/GridUtils.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/code/main/src/utils/RandomNumberGeneratorUtils.cpp">
+			<Option target="disease_simulations"/>
+		</Unit>
+		<Unit filename="/home/christopher/versioned/disease-simulations/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
