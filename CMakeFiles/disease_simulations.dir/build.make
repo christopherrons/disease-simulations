@@ -97,47 +97,47 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/simulations/RandomWalkSimulation.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.s
 
-CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
-CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o: code/main/src/subjects/Subject.cpp
-CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/subjects/Subject.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o: code/main/src/subjectData/Subject.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Subject.cpp
 
-CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/subjects/Subject.cpp > CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.i
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Subject.cpp > CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.i
 
-CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/subjects/Subject.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.s
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Subject.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.s
 
-CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
-CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o: code/main/src/location/Location.cpp
-CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/location/Location.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o: code/main/src/subjectData/Location.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Location.cpp
 
-CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/location/Location.cpp > CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.i
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Location.cpp > CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.i
 
-CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/location/Location.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.s
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/subjectData/Location.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.s
 
-CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
-CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o: code/main/src/utils/RandomNumberGeneratorUtils.cpp
-CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/utils/RandomNumberGeneratorUtils.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
+CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o: code/main/src/math/utils/MathematicalUtils.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/math/utils/MathematicalUtils.cpp
 
-CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/utils/RandomNumberGeneratorUtils.cpp > CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.i
+CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/math/utils/MathematicalUtils.cpp > CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.i
 
-CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/utils/RandomNumberGeneratorUtils.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.s
+CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/math/utils/MathematicalUtils.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.s
 
 CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
 CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o: code/main/src/utils/GridUtils.cpp
@@ -153,43 +153,59 @@ CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/utils/GridUtils.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.s
 
-CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
-CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o: code/main/src/infection/Infection.cpp
-CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/infection/Infection.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
+CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o: code/main/src/math/InfectionSpreadCalculator.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/math/InfectionSpreadCalculator.cpp
 
-CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/infection/Infection.cpp > CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.i
+CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/math/InfectionSpreadCalculator.cpp > CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.i
 
-CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/infection/Infection.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.s
+CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/math/InfectionSpreadCalculator.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.s
+
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o: CMakeFiles/disease_simulations.dir/flags.make
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o: code/main/src/subjectData/HealthStatus.cpp
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o: CMakeFiles/disease_simulations.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o -MF CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o.d -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o -c /home/christopher/versioned/disease-simulations/code/main/src/subjectData/HealthStatus.cpp
+
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/christopher/versioned/disease-simulations/code/main/src/subjectData/HealthStatus.cpp > CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.i
+
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/christopher/versioned/disease-simulations/code/main/src/subjectData/HealthStatus.cpp -o CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.s
 
 # Object files for target disease_simulations
 disease_simulations_OBJECTS = \
 "CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o" \
 "CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.o" \
-"CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o" \
-"CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o" \
-"CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o" \
+"CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o" \
+"CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o" \
+"CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o" \
 "CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o" \
-"CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o"
+"CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o" \
+"CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o"
 
 # External object files for target disease_simulations
 disease_simulations_EXTERNAL_OBJECTS =
 
 disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o
 disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.o
-disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o
-disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o
-disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o
+disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o
+disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o
+disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o
 disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o
-disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o
+disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o
+disease_simulations: CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o
 disease_simulations: CMakeFiles/disease_simulations.dir/build.make
 disease_simulations: CMakeFiles/disease_simulations.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable disease_simulations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/christopher/versioned/disease-simulations/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable disease_simulations"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/disease_simulations.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

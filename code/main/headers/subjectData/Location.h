@@ -6,7 +6,7 @@
 #define DISEASE_SIMULATIONS_LOCATION_H
 
 
-#include "../utils/RandomNumberGeneratorUtils.h"
+
 #include "../utils/GridUtils.h"
 
 class Location {
@@ -17,14 +17,14 @@ public:
 
     void setYCoordinate(double yCoordinate);
 
-    double getXCoordinate() const;
+    double getXCoordinate();
 
-    double getyCoordinate() const;
+    double getYCoordinate();
 
     void updateLocation();
 
 private:
-    double getUpdateCoordinate(double coordinate, double min, double max) const;
+    double getUpdateCoordinate(double coordinate, double min, double max);
 
 private:
     double xCoordinate;

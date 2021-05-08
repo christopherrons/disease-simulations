@@ -129,54 +129,6 @@ disease_simulations/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/build
 .PHONY : disease_simulations/fast
 
-code/main/src/infection/Infection.o: code/main/src/infection/Infection.cpp.o
-.PHONY : code/main/src/infection/Infection.o
-
-# target to build an object file
-code/main/src/infection/Infection.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.o
-.PHONY : code/main/src/infection/Infection.cpp.o
-
-code/main/src/infection/Infection.i: code/main/src/infection/Infection.cpp.i
-.PHONY : code/main/src/infection/Infection.i
-
-# target to preprocess a source file
-code/main/src/infection/Infection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.i
-.PHONY : code/main/src/infection/Infection.cpp.i
-
-code/main/src/infection/Infection.s: code/main/src/infection/Infection.cpp.s
-.PHONY : code/main/src/infection/Infection.s
-
-# target to generate assembly for a file
-code/main/src/infection/Infection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/infection/Infection.cpp.s
-.PHONY : code/main/src/infection/Infection.cpp.s
-
-code/main/src/location/Location.o: code/main/src/location/Location.cpp.o
-.PHONY : code/main/src/location/Location.o
-
-# target to build an object file
-code/main/src/location/Location.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.o
-.PHONY : code/main/src/location/Location.cpp.o
-
-code/main/src/location/Location.i: code/main/src/location/Location.cpp.i
-.PHONY : code/main/src/location/Location.i
-
-# target to preprocess a source file
-code/main/src/location/Location.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.i
-.PHONY : code/main/src/location/Location.cpp.i
-
-code/main/src/location/Location.s: code/main/src/location/Location.cpp.s
-.PHONY : code/main/src/location/Location.s
-
-# target to generate assembly for a file
-code/main/src/location/Location.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/location/Location.cpp.s
-.PHONY : code/main/src/location/Location.cpp.s
-
 code/main/src/main.o: code/main/src/main.cpp.o
 .PHONY : code/main/src/main.o
 
@@ -200,6 +152,54 @@ code/main/src/main.s: code/main/src/main.cpp.s
 code/main/src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.s
 .PHONY : code/main/src/main.cpp.s
+
+code/main/src/math/InfectionSpreadCalculator.o: code/main/src/math/InfectionSpreadCalculator.cpp.o
+.PHONY : code/main/src/math/InfectionSpreadCalculator.o
+
+# target to build an object file
+code/main/src/math/InfectionSpreadCalculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o
+.PHONY : code/main/src/math/InfectionSpreadCalculator.cpp.o
+
+code/main/src/math/InfectionSpreadCalculator.i: code/main/src/math/InfectionSpreadCalculator.cpp.i
+.PHONY : code/main/src/math/InfectionSpreadCalculator.i
+
+# target to preprocess a source file
+code/main/src/math/InfectionSpreadCalculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.i
+.PHONY : code/main/src/math/InfectionSpreadCalculator.cpp.i
+
+code/main/src/math/InfectionSpreadCalculator.s: code/main/src/math/InfectionSpreadCalculator.cpp.s
+.PHONY : code/main/src/math/InfectionSpreadCalculator.s
+
+# target to generate assembly for a file
+code/main/src/math/InfectionSpreadCalculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.s
+.PHONY : code/main/src/math/InfectionSpreadCalculator.cpp.s
+
+code/main/src/math/utils/MathematicalUtils.o: code/main/src/math/utils/MathematicalUtils.cpp.o
+.PHONY : code/main/src/math/utils/MathematicalUtils.o
+
+# target to build an object file
+code/main/src/math/utils/MathematicalUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.o
+.PHONY : code/main/src/math/utils/MathematicalUtils.cpp.o
+
+code/main/src/math/utils/MathematicalUtils.i: code/main/src/math/utils/MathematicalUtils.cpp.i
+.PHONY : code/main/src/math/utils/MathematicalUtils.i
+
+# target to preprocess a source file
+code/main/src/math/utils/MathematicalUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.i
+.PHONY : code/main/src/math/utils/MathematicalUtils.cpp.i
+
+code/main/src/math/utils/MathematicalUtils.s: code/main/src/math/utils/MathematicalUtils.cpp.s
+.PHONY : code/main/src/math/utils/MathematicalUtils.s
+
+# target to generate assembly for a file
+code/main/src/math/utils/MathematicalUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/utils/MathematicalUtils.cpp.s
+.PHONY : code/main/src/math/utils/MathematicalUtils.cpp.s
 
 code/main/src/simulations/RandomWalkSimulation.o: code/main/src/simulations/RandomWalkSimulation.cpp.o
 .PHONY : code/main/src/simulations/RandomWalkSimulation.o
@@ -225,29 +225,77 @@ code/main/src/simulations/RandomWalkSimulation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.s
 .PHONY : code/main/src/simulations/RandomWalkSimulation.cpp.s
 
-code/main/src/subjects/Subject.o: code/main/src/subjects/Subject.cpp.o
-.PHONY : code/main/src/subjects/Subject.o
+code/main/src/subjectData/HealthStatus.o: code/main/src/subjectData/HealthStatus.cpp.o
+.PHONY : code/main/src/subjectData/HealthStatus.o
 
 # target to build an object file
-code/main/src/subjects/Subject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.o
-.PHONY : code/main/src/subjects/Subject.cpp.o
+code/main/src/subjectData/HealthStatus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o
+.PHONY : code/main/src/subjectData/HealthStatus.cpp.o
 
-code/main/src/subjects/Subject.i: code/main/src/subjects/Subject.cpp.i
-.PHONY : code/main/src/subjects/Subject.i
+code/main/src/subjectData/HealthStatus.i: code/main/src/subjectData/HealthStatus.cpp.i
+.PHONY : code/main/src/subjectData/HealthStatus.i
 
 # target to preprocess a source file
-code/main/src/subjects/Subject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.i
-.PHONY : code/main/src/subjects/Subject.cpp.i
+code/main/src/subjectData/HealthStatus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.i
+.PHONY : code/main/src/subjectData/HealthStatus.cpp.i
 
-code/main/src/subjects/Subject.s: code/main/src/subjects/Subject.cpp.s
-.PHONY : code/main/src/subjects/Subject.s
+code/main/src/subjectData/HealthStatus.s: code/main/src/subjectData/HealthStatus.cpp.s
+.PHONY : code/main/src/subjectData/HealthStatus.s
 
 # target to generate assembly for a file
-code/main/src/subjects/Subject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjects/Subject.cpp.s
-.PHONY : code/main/src/subjects/Subject.cpp.s
+code/main/src/subjectData/HealthStatus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.s
+.PHONY : code/main/src/subjectData/HealthStatus.cpp.s
+
+code/main/src/subjectData/Location.o: code/main/src/subjectData/Location.cpp.o
+.PHONY : code/main/src/subjectData/Location.o
+
+# target to build an object file
+code/main/src/subjectData/Location.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o
+.PHONY : code/main/src/subjectData/Location.cpp.o
+
+code/main/src/subjectData/Location.i: code/main/src/subjectData/Location.cpp.i
+.PHONY : code/main/src/subjectData/Location.i
+
+# target to preprocess a source file
+code/main/src/subjectData/Location.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.i
+.PHONY : code/main/src/subjectData/Location.cpp.i
+
+code/main/src/subjectData/Location.s: code/main/src/subjectData/Location.cpp.s
+.PHONY : code/main/src/subjectData/Location.s
+
+# target to generate assembly for a file
+code/main/src/subjectData/Location.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.s
+.PHONY : code/main/src/subjectData/Location.cpp.s
+
+code/main/src/subjectData/Subject.o: code/main/src/subjectData/Subject.cpp.o
+.PHONY : code/main/src/subjectData/Subject.o
+
+# target to build an object file
+code/main/src/subjectData/Subject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o
+.PHONY : code/main/src/subjectData/Subject.cpp.o
+
+code/main/src/subjectData/Subject.i: code/main/src/subjectData/Subject.cpp.i
+.PHONY : code/main/src/subjectData/Subject.i
+
+# target to preprocess a source file
+code/main/src/subjectData/Subject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.i
+.PHONY : code/main/src/subjectData/Subject.cpp.i
+
+code/main/src/subjectData/Subject.s: code/main/src/subjectData/Subject.cpp.s
+.PHONY : code/main/src/subjectData/Subject.s
+
+# target to generate assembly for a file
+code/main/src/subjectData/Subject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.s
+.PHONY : code/main/src/subjectData/Subject.cpp.s
 
 code/main/src/utils/GridUtils.o: code/main/src/utils/GridUtils.cpp.o
 .PHONY : code/main/src/utils/GridUtils.o
@@ -273,30 +321,6 @@ code/main/src/utils/GridUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.s
 .PHONY : code/main/src/utils/GridUtils.cpp.s
 
-code/main/src/utils/RandomNumberGeneratorUtils.o: code/main/src/utils/RandomNumberGeneratorUtils.cpp.o
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.o
-
-# target to build an object file
-code/main/src/utils/RandomNumberGeneratorUtils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.o
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.cpp.o
-
-code/main/src/utils/RandomNumberGeneratorUtils.i: code/main/src/utils/RandomNumberGeneratorUtils.cpp.i
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.i
-
-# target to preprocess a source file
-code/main/src/utils/RandomNumberGeneratorUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.i
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.cpp.i
-
-code/main/src/utils/RandomNumberGeneratorUtils.s: code/main/src/utils/RandomNumberGeneratorUtils.cpp.s
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.s
-
-# target to generate assembly for a file
-code/main/src/utils/RandomNumberGeneratorUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/RandomNumberGeneratorUtils.cpp.s
-.PHONY : code/main/src/utils/RandomNumberGeneratorUtils.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,27 +330,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... disease_simulations"
-	@echo "... code/main/src/infection/Infection.o"
-	@echo "... code/main/src/infection/Infection.i"
-	@echo "... code/main/src/infection/Infection.s"
-	@echo "... code/main/src/location/Location.o"
-	@echo "... code/main/src/location/Location.i"
-	@echo "... code/main/src/location/Location.s"
 	@echo "... code/main/src/main.o"
 	@echo "... code/main/src/main.i"
 	@echo "... code/main/src/main.s"
+	@echo "... code/main/src/math/InfectionSpreadCalculator.o"
+	@echo "... code/main/src/math/InfectionSpreadCalculator.i"
+	@echo "... code/main/src/math/InfectionSpreadCalculator.s"
+	@echo "... code/main/src/math/utils/MathematicalUtils.o"
+	@echo "... code/main/src/math/utils/MathematicalUtils.i"
+	@echo "... code/main/src/math/utils/MathematicalUtils.s"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.o"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.i"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.s"
-	@echo "... code/main/src/subjects/Subject.o"
-	@echo "... code/main/src/subjects/Subject.i"
-	@echo "... code/main/src/subjects/Subject.s"
+	@echo "... code/main/src/subjectData/HealthStatus.o"
+	@echo "... code/main/src/subjectData/HealthStatus.i"
+	@echo "... code/main/src/subjectData/HealthStatus.s"
+	@echo "... code/main/src/subjectData/Location.o"
+	@echo "... code/main/src/subjectData/Location.i"
+	@echo "... code/main/src/subjectData/Location.s"
+	@echo "... code/main/src/subjectData/Subject.o"
+	@echo "... code/main/src/subjectData/Subject.i"
+	@echo "... code/main/src/subjectData/Subject.s"
 	@echo "... code/main/src/utils/GridUtils.o"
 	@echo "... code/main/src/utils/GridUtils.i"
 	@echo "... code/main/src/utils/GridUtils.s"
-	@echo "... code/main/src/utils/RandomNumberGeneratorUtils.o"
-	@echo "... code/main/src/utils/RandomNumberGeneratorUtils.i"
-	@echo "... code/main/src/utils/RandomNumberGeneratorUtils.s"
 .PHONY : help
 
 

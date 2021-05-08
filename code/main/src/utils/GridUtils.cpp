@@ -5,8 +5,8 @@
 #include "../../headers/utils/GridUtils.h"
 
 int GridUtils::getGridWidth() {
-    return 800;
+    return 512;
 }
 int GridUtils::getGridHeight() {
-    return 800;
+    return 512;
 }

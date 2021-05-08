@@ -1,5 +1,5 @@
-CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.o: \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/RandomWalkSimulation.cpp \
+CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o: \
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/HealthStatus.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/iostream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
@@ -131,98 +131,8 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
  /usr/include/c++/7/bits/basic_ios.tcc \
  /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/istream \
  /usr/include/c++/7/bits/istream.tcc \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/RandomWalkSimulation.h \
- /usr/include/c++/7/vector /usr/include/c++/7/bits/stl_construct.h \
- /usr/include/c++/7/bits/stl_uninitialized.h \
- /usr/include/c++/7/bits/stl_vector.h \
- /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/Subject.h \
- /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
- /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
- /usr/include/SFML/System/FileInputStream.hpp \
- /usr/include/SFML/System/InputStream.hpp \
- /usr/include/SFML/System/NonCopyable.hpp \
- /usr/include/SFML/System/Lock.hpp \
- /usr/include/SFML/System/MemoryInputStream.hpp \
- /usr/include/SFML/System/Mutex.hpp /usr/include/SFML/System/Sleep.hpp \
- /usr/include/SFML/System/String.hpp /usr/include/SFML/System/Utf.hpp \
- /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
- /usr/include/c++/7/bits/stl_relops.h /usr/include/c++/7/bits/stl_algo.h \
- /usr/include/c++/7/bits/algorithmfwd.h \
- /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
- /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
- /usr/include/c++/7/locale /usr/include/c++/7/bits/locale_facets_nonio.h \
- /usr/include/c++/7/ctime \
- /usr/include/x86_64-linux-gnu/c++/7/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/7/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/7/bits/codecvt.h \
- /usr/include/c++/7/bits/locale_facets_nonio.tcc \
- /usr/include/c++/7/bits/locale_conv.h \
- /usr/include/c++/7/bits/stringfwd.h /usr/include/c++/7/bits/allocator.h \
- /usr/include/c++/7/bits/codecvt.h /usr/include/c++/7/bits/unique_ptr.h \
- /usr/include/c++/7/tuple /usr/include/c++/7/array \
- /usr/include/c++/7/bits/uses_allocator.h \
- /usr/include/c++/7/bits/invoke.h /usr/include/SFML/System/Utf.inl \
- /usr/include/c++/7/iterator /usr/include/c++/7/bits/stream_iterator.h \
- /usr/include/SFML/System/String.inl /usr/include/SFML/System/Thread.hpp \
- /usr/include/SFML/System/Thread.inl \
- /usr/include/SFML/System/ThreadLocal.hpp \
- /usr/include/SFML/System/ThreadLocalPtr.hpp \
- /usr/include/SFML/System/ThreadLocalPtr.inl \
- /usr/include/SFML/System/Vector2.hpp \
- /usr/include/SFML/System/Vector2.inl \
- /usr/include/SFML/System/Vector3.hpp \
- /usr/include/SFML/System/Vector3.inl \
- /usr/include/SFML/Window/Context.hpp /usr/include/SFML/Window/Export.hpp \
- /usr/include/SFML/Window/GlResource.hpp \
- /usr/include/SFML/Window/ContextSettings.hpp \
- /usr/include/SFML/Window/Event.hpp /usr/include/SFML/Window/Joystick.hpp \
- /usr/include/SFML/Window/Keyboard.hpp /usr/include/SFML/Window/Mouse.hpp \
- /usr/include/SFML/Window/Sensor.hpp /usr/include/SFML/Window/Touch.hpp \
- /usr/include/SFML/Window/VideoMode.hpp \
- /usr/include/SFML/Window/Window.hpp \
- /usr/include/SFML/Window/WindowHandle.hpp \
- /usr/include/SFML/Window/WindowStyle.hpp \
- /usr/include/SFML/Graphics/BlendMode.hpp \
- /usr/include/SFML/Graphics/Export.hpp \
- /usr/include/SFML/Graphics/CircleShape.hpp \
- /usr/include/SFML/Graphics/Shape.hpp \
- /usr/include/SFML/Graphics/Drawable.hpp \
- /usr/include/SFML/Graphics/RenderStates.hpp \
- /usr/include/SFML/Graphics/Transform.hpp \
- /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/Graphics/Rect.inl \
- /usr/include/SFML/Graphics/Transformable.hpp \
- /usr/include/SFML/Graphics/VertexArray.hpp \
- /usr/include/SFML/Graphics/Vertex.hpp \
- /usr/include/SFML/Graphics/Color.hpp \
- /usr/include/SFML/Graphics/PrimitiveType.hpp \
- /usr/include/SFML/Graphics/ConvexShape.hpp \
- /usr/include/SFML/Graphics/Font.hpp /usr/include/SFML/Graphics/Glyph.hpp \
- /usr/include/SFML/Graphics/Texture.hpp \
- /usr/include/SFML/Graphics/Image.hpp /usr/include/c++/7/map \
- /usr/include/c++/7/bits/stl_tree.h \
- /usr/include/c++/7/ext/aligned_buffer.h \
- /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h \
- /usr/include/SFML/Graphics/RectangleShape.hpp \
- /usr/include/SFML/Graphics/RenderTarget.hpp \
- /usr/include/SFML/Graphics/View.hpp \
- /usr/include/SFML/Graphics/RenderTexture.hpp \
- /usr/include/SFML/Graphics/RenderWindow.hpp \
- /usr/include/SFML/Graphics/Shader.hpp \
- /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
- /usr/include/SFML/Graphics/Sprite.hpp \
- /usr/include/SFML/Graphics/Text.hpp /usr/include/c++/7/unordered_map \
- /usr/include/c++/7/bits/hashtable.h \
- /usr/include/c++/7/bits/hashtable_policy.h \
- /usr/include/c++/7/bits/unordered_map.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/Location.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../utils/GridUtils.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/InfectionSpreadCalculator.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/MathematicalUtils.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/../../subjectData/Location.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/HealthStatus.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/InfectionSpreadCalculator.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/utils/MathematicalUtils.h
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/../../headers/subjectData/HealthStatus.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/../../headers/subjectData/../../headers/math/InfectionSpreadCalculator.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/../../headers/subjectData/../../headers/math/utils/MathematicalUtils.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/../../headers/subjectData/../../headers/math/utils/../../subjectData/Location.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/subjectData/../../headers/subjectData/../../headers/math/utils/../../subjectData/../utils/GridUtils.h

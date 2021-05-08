@@ -1,10 +1,16 @@
 #include <SFML/Graphics.hpp>
+#include <thread>
 #include "../headers/simulations/RandomWalkSimulation.h"
-#include "../headers/utils/GridUtils.h"
+
+//TODO: Fix Make file location
+//TODO: Add install script
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(GridUtils::getGridWidth(),  GridUtils::getGridHeight()), "SFML works!");
-    RandomWalkSimulation simulation(1000);
+    sf::RenderWindow window(sf::VideoMode(GridUtils::getGridWidth(), GridUtils::getGridHeight()),
+                            "Random Walk Disease Spread Simulation");
+                           // sf::Style::Fullscreen);
+    window.setFramerateLimit(30);
+    RandomWalkSimulation simulation(5000);
 
     while (window.isOpen()) {
         sf::Event event{};
@@ -12,17 +18,12 @@ int main() {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-
-        int nrOfSimulationIterations = 10;
-        while (nrOfSimulationIterations > 0) {
-            window.clear();
-            simulation.iterateSimulation();
-            for (auto &subject : simulation.getSubjects()) {
-                window.draw(subject.getSubjectTexture());
-            }
-            window.display();
-            nrOfSimulationIterations--;
+        window.clear();
+        simulation.iterateSimulation();
+        for (auto &subject : simulation.getSubjects()) {
+            window.draw(subject.getSubjectTexture());
         }
+        window.display();
     }
 
     return 0;

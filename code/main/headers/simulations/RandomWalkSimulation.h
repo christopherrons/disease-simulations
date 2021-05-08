@@ -6,7 +6,7 @@
 #define DISEASE_SIMULATIONS_RANDOMWALKSIMULATION_H
 
 #include <vector>
-#include "../subjects/Subject.h"
+#include "../subjectData/Subject.h"
 
 class RandomWalkSimulation {
 public:
@@ -15,7 +15,13 @@ public:
     void iterateSimulation();
 
 private:
-    std::vector<Subject> initSubjects() const;
+    void initSubjects();
+
+    void updateSickSubjectHealthStatus();
+
+    void updateDiseaseSpread();
+
+    void updateSubjectLocation();
 
 public:
     explicit RandomWalkSimulation(int nrOfSubjects);
@@ -23,6 +29,10 @@ public:
 private:
     int nrOfSubjects;
     std::vector<Subject> subjects;
+    std::vector<Subject *> susceptibleSubjects;
+    std::vector<Subject *> infectedSubjects;
+    std::vector<Subject *> immuneSubjects;
+    std::vector<Subject *> deceasedSubjects;
 };
 
 #endif //DISEASE_SIMULATIONS_RANDOMWALKSIMULATION_H
