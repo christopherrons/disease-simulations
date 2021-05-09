@@ -8,7 +8,6 @@
 #include "../../headers/subjectData/Subject.h"
 
 Subject::Subject(int id) {
-    std::cout << id;
     this->id = id;
     this->location = Location();
     this->healthStatus = HealthStatus();

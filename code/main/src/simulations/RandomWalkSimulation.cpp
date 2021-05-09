@@ -14,6 +14,10 @@ RandomWalkSimulation::RandomWalkSimulation(int nrOfSubjects) {
     this->infectedSubjects;
     this->immuneSubjects;
     this->deceasedSubjects;
+    this->nrOfSusceptible = 0;
+    this->nrOfDeceased = 0;
+    this->nrOfImmune = 0;
+    this->nrOfInfected = 0;
 
     initSubjects();
 }
@@ -29,7 +33,6 @@ void RandomWalkSimulation::initSubjects() {
             this->susceptibleSubjects.emplace_back(&subject);
         }
     }
-    std::cout << "Subjects created";
 }
 
 std::vector<Subject> RandomWalkSimulation::getSubjects() {
@@ -37,31 +40,26 @@ std::vector<Subject> RandomWalkSimulation::getSubjects() {
 }
 
 void RandomWalkSimulation::iterateSimulation() {
-    std::cout << "Iterate\n";
     updateSickSubjectHealthStatus();
     updateDiseaseSpread();
     for (auto &subject: this->subjects) {
-        std::cout << "Subject: " << &subject << "\n";
         if (!subject.getHealthStatus()->isDeceased()) {
             subject.updateLocation();
         }
     }
-    std::cout << "Done Iterate\n";
+    initPopulationHealthState();
 }
 
 void RandomWalkSimulation::updateSickSubjectHealthStatus() {
-    std::cout << "Updating Health\n";
     for (auto &subject : this->subjects) {
         if (subject.getHealthStatus()->isInfected()) {
-            //    std::cout << "Subject: " << subject << "\n";
             subject.updateHealthStatus();
         }
     }
 }
 
 void RandomWalkSimulation::updateDiseaseSpread() {
-    std::cout << "Spreading";
-    int infectionSpreadZone = 150;
+    int infectionSpreadZone = 450;
     for (auto &subject : this->subjects) {
         if (!subject.getHealthStatus()->isDeceased() && !subject.getHealthStatus()->isImmune() && subject.getHealthStatus()->isInfected()) {
             for (auto &susceptibleSubject : this->subjects) {
@@ -76,6 +74,24 @@ void RandomWalkSimulation::updateDiseaseSpread() {
                     }
                 }
             }
+        }
+    }
+}
+
+void RandomWalkSimulation::initPopulationHealthState() {
+    this->nrOfSusceptible = 0;
+    this->nrOfDeceased = 0;
+    this->nrOfImmune = 0;
+    this->nrOfInfected = 0;
+    for (auto &subject : this->subjects) {
+        if (subject.getHealthStatus()->isInfected()) {
+            this->nrOfInfected++;
+        } else if (subject.getHealthStatus()->isImmune()) {
+            this->nrOfImmune++;
+        }else if (subject.getHealthStatus()->isDeceased()) {
+            this->nrOfDeceased++;
+        } else {
+            this->nrOfSusceptible++;
         }
     }
 }

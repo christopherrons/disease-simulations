@@ -10,6 +10,8 @@
 
 class RandomWalkSimulation {
 public:
+    explicit RandomWalkSimulation(int nrOfSubjects);
+
     std::vector<Subject> getSubjects();
 
     void iterateSimulation();
@@ -23,16 +25,21 @@ private:
 
     void updateSubjectLocation();
 
-public:
-    explicit RandomWalkSimulation(int nrOfSubjects);
+    void initPopulationHealthState();
 
 private:
-    int nrOfSubjects;
     std::vector<Subject> subjects;
     std::vector<Subject *> susceptibleSubjects;
     std::vector<Subject *> infectedSubjects;
     std::vector<Subject *> immuneSubjects;
     std::vector<Subject *> deceasedSubjects;
+
+public:
+    int nrOfSubjects;
+    int nrOfInfected;
+    int nrOfDeceased;
+    int nrOfImmune;
+    int nrOfSusceptible;
 };
 
 #endif //DISEASE_SIMULATIONS_RANDOMWALKSIMULATION_H

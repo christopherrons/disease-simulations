@@ -11,6 +11,8 @@ class InfectionSpreadCalculator {
 public:
     explicit InfectionSpreadCalculator();
 
+    static bool isInitialInfection();
+
     static bool isInfectionSpread();
 
     static bool isRecovered(int daysSickWeight);

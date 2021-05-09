@@ -7,15 +7,22 @@
 
 InfectionSpreadCalculator::InfectionSpreadCalculator() = default;
 
+bool InfectionSpreadCalculator::isInitialInfection() {
+    int infectionRate = 35;
+    if (MathematicalUtils::getUniformRandomNumber(0,100) <= infectionRate) {
+        return true;
+    } return false;
+}
+
 bool InfectionSpreadCalculator::isInfectionSpread() {
-    int infectionRate = 20;
+    int infectionRate = 90;
     if (MathematicalUtils::getUniformRandomNumber(0,100) <= infectionRate) {
         return true;
     } return false;
 }
 
 bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
-    int recoveryRate = 5 + daysSickWeight * 2;
+    int recoveryRate = 1 + daysSickWeight * 0.1;
     if (MathematicalUtils::getUniformRandomNumber(0,100) <= recoveryRate) {
         return true;
     } return false;

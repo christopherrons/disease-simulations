@@ -7,8 +7,7 @@
 
 
 HealthStatus::HealthStatus() {
-    std::cout << "Helth";
-    this->infected = InfectionSpreadCalculator::isInfectionSpread();
+    this->infected = InfectionSpreadCalculator::isInitialInfection();
     this->immune = false;
     this->deceased = false;
     this->nrOfDaysSick = 0;
@@ -18,6 +17,7 @@ void HealthStatus::updateHealthStatus() {
     if (this->isInfected()) {
         if (InfectionSpreadCalculator::isRecovered(this->nrOfDaysSick + 1)) {
             this->infected = false;
+            this->nrOfDaysSick = 0;
             if (InfectionSpreadCalculator::isImmune()) {
                 this->immune = true;
             }

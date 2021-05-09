@@ -275,22 +275,6 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: code/main/src/main.
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/c++/7/thread \
-  /usr/include/c++/7/chrono \
-  /usr/include/c++/7/ratio \
-  /usr/include/c++/7/bits/parse_numbers.h \
-  /usr/include/c++/7/memory \
-  /usr/include/c++/7/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/7/ext/concurrence.h \
-  /usr/include/c++/7/bits/unique_ptr.h \
-  /usr/include/c++/7/bits/shared_ptr.h \
-  /usr/include/c++/7/bits/shared_ptr_base.h \
-  /usr/include/c++/7/bits/allocated_ptr.h \
-  /usr/include/c++/7/bits/refwrap.h \
-  /usr/include/c++/7/bits/shared_ptr_atomic.h \
-  /usr/include/c++/7/bits/atomic_base.h \
-  /usr/include/c++/7/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/7/backward/auto_ptr.h \
   code/main/headers/simulations/RandomWalkSimulation.h \
   code/main/headers/subjectData/Subject.h \
   /usr/include/c++/7/unordered_map \
@@ -303,7 +287,19 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: code/main/src/main.
   code/main/headers/math/utils/MathematicalUtils.h \
   code/main/headers/subjectData/Location.h \
   code/main/headers/subjectData/HealthStatus.h \
-  code/main/headers/math/InfectionSpreadCalculator.h
+  code/main/headers/math/InfectionSpreadCalculator.h \
+  /usr/include/c++/7/iostream \
+  /usr/include/c++/7/math.h \
+  /usr/include/c++/7/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o: code/main/src/math/InfectionSpreadCalculator.cpp \
   /usr/include/stdc-predef.h \
@@ -1440,13 +1436,15 @@ code/main/src/subjectData/HealthStatus.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/opt_random.h:
 
+code/main/src/math/InfectionSpreadCalculator.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/c++/7/iostream:
-
-code/main/src/math/InfectionSpreadCalculator.cpp:
 
 code/main/headers/subjectData/HealthStatus.h:
 
@@ -1459,20 +1457,6 @@ code/main/headers/subjectData/Location.h:
 /usr/include/c++/7/bits/hashtable_policy.h:
 
 /usr/include/c++/7/bits/hashtable.h:
-
-/usr/include/c++/7/backward/auto_ptr.h:
-
-/usr/include/c++/7/bits/atomic_base.h:
-
-/usr/include/c++/7/bits/shared_ptr_base.h:
-
-/usr/include/c++/7/ext/concurrence.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/c++/7/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/7/bits/parse_numbers.h:
 
 /usr/include/SFML/Graphics/Sprite.hpp:
 
@@ -1493,8 +1477,6 @@ code/main/headers/subjectData/Location.h:
 /usr/include/SFML/Graphics/Transform.hpp:
 
 /usr/include/c++/7/bits/random.h:
-
-/usr/include/c++/7/chrono:
 
 /usr/include/SFML/Graphics/RenderStates.hpp:
 
@@ -1521,8 +1503,6 @@ code/main/headers/subjectData/Location.h:
 code/main/src/simulations/RandomWalkSimulation.cpp:
 
 /usr/include/SFML/Window/Joystick.hpp:
-
-/usr/include/c++/7/ratio:
 
 /usr/include/SFML/Window/ContextSettings.hpp:
 
@@ -1615,8 +1595,6 @@ code/main/src/simulations/RandomWalkSimulation.cpp:
 /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h:
-
-/usr/include/c++/7/memory:
 
 /usr/include/c++/7/bits/locale_classes.tcc:
 
@@ -1792,8 +1770,6 @@ code/main/headers/simulations/RandomWalkSimulation.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h:
 
-/usr/include/c++/7/thread:
-
 /usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h:
@@ -1809,8 +1785,6 @@ code/main/headers/simulations/RandomWalkSimulation.h:
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/7/bits/refwrap.h:
 
 /usr/include/c++/7/ext/aligned_buffer.h:
 
@@ -1858,11 +1832,7 @@ code/main/headers/simulations/RandomWalkSimulation.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/c++/7/bits/allocated_ptr.h:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
-
-/usr/include/c++/7/bits/shared_ptr_atomic.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -1941,8 +1911,6 @@ code/main/headers/simulations/RandomWalkSimulation.h:
 /usr/include/SFML/Graphics/Glsl.inl:
 
 /usr/include/c++/7/bits/cxxabi_forced.h:
-
-/usr/include/c++/7/bits/shared_ptr.h:
 
 /usr/include/c++/7/bits/basic_ios.tcc:
 
@@ -2034,9 +2002,9 @@ code/main/headers/math/utils/MathematicalUtils.h:
 
 /usr/include/c++/7/bits/streambuf.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/c++/7/math.h:
 
-/usr/include/c++/7/bits/atomic_lockfree_defines.h:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/7/cwchar:
 
