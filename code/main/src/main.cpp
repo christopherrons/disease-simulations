@@ -12,7 +12,7 @@ setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, i
     int maxHeight = ConfigUtils::getSirPlotHeight();
     int addBlackBorder = 3;
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
-    for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
+   for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Green);
     }
     int infectedHeight = (nrOfInfected * maxHeight) / nrOfSubjects;
@@ -27,7 +27,7 @@ setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, i
     for (int i = susceptibleHeight + infectedHeight + immuneHeight; i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Yellow);
     }
-    
+
     texture.loadFromImage(image);
 }
 
@@ -42,10 +42,11 @@ int main() {
     window.setFramerateLimit(60);
     sf::Sprite background;
     background.setTexture(texture);
-
+    window.draw(background);
     RandomWalkSimulation simulation(1000);
     int simulationIteration = 0;
     while (simulationIteration < ConfigUtils::getGridWidth()) {
+        std::cout << "Simulation Iter: " << simulationIteration << "\n";
         sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
@@ -53,14 +54,14 @@ int main() {
         }
         window.clear();
         window.draw(background);
-        simulation.iterateSimulation();
         for (auto &subject : simulation.getSubjects()) {
             window.draw(subject.getSubjectTexture());
         }
-        window.display();
-
         setPixelColor(texture, simulationIteration, simulation.nrOfSubjects, simulation.nrOfSusceptible,
                       simulation.nrOfDeceased, simulation.nrOfImmune, simulation.nrOfInfected);
+
+        simulation.iterateSimulation();
+        window.display();
 
         simulationIteration++;
 

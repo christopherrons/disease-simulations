@@ -23,16 +23,10 @@ private:
 
     void updateDiseaseSpread();
 
-    void updateSubjectLocation();
-
     void updatePopulationHealthState();
 
 private:
     std::vector<Subject> subjects;
-    std::vector<Subject *> susceptibleSubjects;
-    std::vector<Subject *> infectedSubjects;
-    std::vector<Subject *> immuneSubjects;
-    std::vector<Subject *> deceasedSubjects;
 
 public:
     int nrOfSubjects;

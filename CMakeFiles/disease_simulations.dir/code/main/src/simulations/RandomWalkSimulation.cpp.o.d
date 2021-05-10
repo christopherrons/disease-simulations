@@ -223,6 +223,4 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/MathematicalUtils.h \
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/../../subjectData/Location.h \
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/HealthStatus.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/InfectionSpreadCalculator.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/utils/MathematicalUtils.h
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h

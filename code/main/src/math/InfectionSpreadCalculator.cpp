@@ -16,7 +16,7 @@ bool InfectionSpreadCalculator::isInitialInfection() {
 }
 
 bool InfectionSpreadCalculator::isInfectionSpread() {
-    int infectionRate = 90;
+    int infectionRate = 70;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionRate) {
         return true;
     }
@@ -24,7 +24,7 @@ bool InfectionSpreadCalculator::isInfectionSpread() {
 }
 
 bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
-    int recoveryRate = 5 + daysSickWeight * 0.1;
+    double recoveryRate = 5 + daysSickWeight * 0.1;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= recoveryRate) {
         return true;
     }
@@ -33,7 +33,9 @@ bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
 
 bool InfectionSpreadCalculator::isDeceased() {
     int deathRate = 1;
-    if (MathematicalUtils::getUniformRandomNumber(1, 100) <= deathRate) {
+    double value = MathematicalUtils::getUniformRandomNumber(0, 100);
+    //std::cout << value << "\n";
+    if (value <= deathRate) {
         return true;
     }
     return false;

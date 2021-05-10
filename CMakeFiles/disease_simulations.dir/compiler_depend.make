@@ -940,9 +940,7 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
   code/main/headers/math/utils/MathematicalUtils.h \
   code/main/headers/subjectData/Location.h \
   code/main/headers/subjectData/HealthStatus.h \
-  code/main/headers/math/InfectionSpreadCalculator.h \
-  code/main/headers/math/InfectionSpreadCalculator.h \
-  code/main/headers/math/utils/MathematicalUtils.h
+  code/main/headers/math/InfectionSpreadCalculator.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/subjectData/HealthStatus.cpp.o: code/main/src/subjectData/HealthStatus.cpp \
   /usr/include/stdc-predef.h \

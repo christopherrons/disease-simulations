@@ -4,34 +4,22 @@
 
 #include <iostream>
 #include "../../headers/simulations/RandomWalkSimulation.h"
-#include "../../headers/math/InfectionSpreadCalculator.h"
-#include "../../headers/math/utils/MathematicalUtils.h"
 
 RandomWalkSimulation::RandomWalkSimulation(int nrOfSubjects) {
     this->nrOfSubjects = nrOfSubjects;
-    this->subjects;
-    this->susceptibleSubjects;
-    this->infectedSubjects;
-    this->immuneSubjects;
-    this->deceasedSubjects;
     this->nrOfSusceptible = 0;
     this->nrOfDeceased = 0;
     this->nrOfImmune = 0;
     this->nrOfInfected = 0;
 
     initSubjects();
+    updatePopulationHealthState();
 }
 
 void RandomWalkSimulation::initSubjects() {
-    this->subjects.reserve(this->nrOfSubjects);
     for (int i = 0; i < this->nrOfSubjects; i++) {
         Subject subject = Subject(i);
         this->subjects.emplace_back(subject);
-        if (subject.getHealthStatus().isInfected()) {
-            this->infectedSubjects.emplace_back(&subject);
-        } else {
-            this->susceptibleSubjects.emplace_back(&subject);
-        }
     }
 }
 
@@ -58,7 +46,7 @@ void RandomWalkSimulation::updateSickSubjectHealthStatus() {
 
 //TODO: Cleanup
 void RandomWalkSimulation::updateDiseaseSpread() {
-    int infectionSpreadRadius = 45;
+    int infectionSpreadRadius = 35;
     for (auto &subject : this->subjects) {
         if (!subject.getHealthStatus().isDeceased() && !subject.getHealthStatus().isImmune() &&
             subject.getHealthStatus().isInfected()) {
@@ -94,6 +82,7 @@ void RandomWalkSimulation::updatePopulationHealthState() {
             this->nrOfSusceptible++;
         }
     }
+    std::cout <<  this->nrOfInfected;
 }
 
 
