@@ -30,7 +30,7 @@ sf::CircleShape &Subject::getSubjectTexture() {
         this->subjectShape.setFillColor(sf::Color::Blue);
     } else if (this->healthStatus.isDeceased()) {
         this->subjectShape.setFillColor(sf::Color::Yellow);
-        this->subjectShape.setRadius(5);
+        this->subjectShape.setRadius(3.5);
     } else {
         this->subjectShape.setFillColor(sf::Color::Green);
     }

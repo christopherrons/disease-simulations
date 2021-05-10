@@ -47,19 +47,18 @@ void RandomWalkSimulation::iterateSimulation() {
             subject.updateLocation();
         }
     }
-    initPopulationHealthState();
+    updatePopulationHealthState();
 }
 
 void RandomWalkSimulation::updateSickSubjectHealthStatus() {
     for (auto &subject : this->subjects) {
-        if (subject.getHealthStatus().isInfected()) {
-            subject.updateHealthStatus();
-        }
+        subject.updateHealthStatus();
     }
 }
 
+//TODO: Cleanup
 void RandomWalkSimulation::updateDiseaseSpread() {
-    int infectionSpreadZone = 45;
+    int infectionSpreadRadius = 45;
     for (auto &subject : this->subjects) {
         if (!subject.getHealthStatus().isDeceased() && !subject.getHealthStatus().isImmune() &&
             subject.getHealthStatus().isInfected()) {
@@ -67,12 +66,9 @@ void RandomWalkSimulation::updateDiseaseSpread() {
                 if (!susceptibleSubject.getHealthStatus().isDeceased() &&
                     !susceptibleSubject.getHealthStatus().isImmune() &&
                     !susceptibleSubject.getHealthStatus().isInfected()) {
-                    std::cout << "Infected\n";
                     if (MathematicalUtils::calculateDistanceBetweenSubjects(
-                            subject.getLocation(), susceptibleSubject.getLocation()) < infectionSpreadZone) {
-
+                            subject.getLocation(), susceptibleSubject.getLocation()) < infectionSpreadRadius) {
                         if (InfectionSpreadCalculator::isInfectionSpread()) {
-                            std::cout << "Infected\n";
                             susceptibleSubject.getHealthStatus().setIsInfected(true);
                         }
                     }
@@ -82,7 +78,7 @@ void RandomWalkSimulation::updateDiseaseSpread() {
     }
 }
 
-void RandomWalkSimulation::initPopulationHealthState() {
+void RandomWalkSimulation::updatePopulationHealthState() {
     this->nrOfSusceptible = 0;
     this->nrOfDeceased = 0;
     this->nrOfImmune = 0;

@@ -25,7 +25,7 @@ private:
 
     void updateSubjectLocation();
 
-    void initPopulationHealthState();
+    void updatePopulationHealthState();
 
 private:
     std::vector<Subject> subjects;

@@ -14,7 +14,7 @@ HealthStatus::HealthStatus() {
 }
 
 void HealthStatus::updateHealthStatus() {
-    if (this->isInfected()) {
+    if (this->isInfected() && !this->isDeceased()) {
         if (InfectionSpreadCalculator::isRecovered(this->nrOfDaysSick + 1)) {
             this->infected = false;
             this->nrOfDaysSick = 0;
@@ -22,6 +22,7 @@ void HealthStatus::updateHealthStatus() {
                 this->immune = true;
             }
         } else if (InfectionSpreadCalculator::isDeceased()) {
+            this->infected = false;
             this->deceased = true;
         }
     }

@@ -9,21 +9,25 @@ sf::Color
 setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased,
               int nrOfImmune, int nrOfInfected) {
     sf::Image image = texture.copyToImage();
-    int maxHeight = 200;
+    int maxHeight = ConfigUtils::getSirPlotHeight();
+    int addBlackBorder = 3;
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
-    for (int i = 0; i < susceptibleHeight; i++) {
+    for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Green);
     }
     int infectedHeight = (nrOfInfected * maxHeight) / nrOfSubjects;
-    for (int i = susceptibleHeight; i < susceptibleHeight + infectedHeight; i++) {
+    for (int i = susceptibleHeight; i < susceptibleHeight + infectedHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Red);
     }
-    int removedHeight = ((nrOfDeceased + nrOfImmune) * maxHeight) / nrOfSubjects;
-    for (int i = susceptibleHeight + infectedHeight; i < susceptibleHeight + infectedHeight + removedHeight; i++) {
+    int immuneHeight = (nrOfImmune * maxHeight) / nrOfSubjects;
+    for (int i = susceptibleHeight + infectedHeight; i < susceptibleHeight + infectedHeight + immuneHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Blue);
     }
-
-
+    int deceasedHeight = (nrOfDeceased * maxHeight) / nrOfSubjects;
+    for (int i = susceptibleHeight + infectedHeight + immuneHeight; i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight - addBlackBorder; i++) {
+        image.setPixel(simulationIteration, i, sf::Color::Yellow);
+    }
+    
     texture.loadFromImage(image);
 }
 
@@ -41,7 +45,7 @@ int main() {
 
     RandomWalkSimulation simulation(1000);
     int simulationIteration = 0;
-    while (simulationIteration < 1000) {
+    while (simulationIteration < ConfigUtils::getGridWidth()) {
         sf::Event event{};
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
