@@ -6,8 +6,7 @@
 #define DISEASE_SIMULATIONS_LOCATION_H
 
 
-
-#include "../utils/GridUtils.h"
+#include "../utils/ConfigUtils.h"
 
 class Location {
 public:

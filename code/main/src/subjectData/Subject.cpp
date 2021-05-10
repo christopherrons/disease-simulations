@@ -11,6 +11,7 @@ Subject::Subject(int id) {
     this->id = id;
     this->location = Location();
     this->healthStatus = HealthStatus();
+    this->subjectShape = sf::CircleShape(2);
 }
 
 void Subject::updateLocation() {
@@ -21,32 +22,31 @@ void Subject::updateHealthStatus() {
     this->healthStatus.updateHealthStatus();
 }
 
-sf::CircleShape Subject::getSubjectTexture() {
-    sf::CircleShape shape(2);
-    shape.setPosition(this->location.getXCoordinate(), this->location.getYCoordinate());
+sf::CircleShape &Subject::getSubjectTexture() {
+    this->subjectShape.setPosition(this->location.getXCoordinate(), this->location.getYCoordinate());
     if (this->healthStatus.isInfected()) {
-        shape.setFillColor(sf::Color::Red);
+        this->subjectShape.setFillColor(sf::Color::Red);
     } else if (this->healthStatus.isImmune()) {
-        shape.setFillColor(sf::Color::Blue);
+        this->subjectShape.setFillColor(sf::Color::Blue);
     } else if (this->healthStatus.isDeceased()) {
-        shape.setFillColor(sf::Color::Yellow);
-        shape.setRadius(5);
+        this->subjectShape.setFillColor(sf::Color::Yellow);
+        this->subjectShape.setRadius(5);
     } else {
-        shape.setFillColor(sf::Color::Green);
+        this->subjectShape.setFillColor(sf::Color::Green);
     }
-    return shape;
+    return this->subjectShape;
 }
 
-HealthStatus *Subject::getHealthStatus() {
-    return &this->healthStatus;
+HealthStatus &Subject::getHealthStatus() {
+    return this->healthStatus;
 }
 
-Location *Subject::getLocation() {
-    return &this->location;
+Location &Subject::getLocation() {
+    return this->location;
 }
 
-int *Subject::getId() {
-    return &this->id;
+int Subject::getId() {
+    return this->id;
 }
 
 

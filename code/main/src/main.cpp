@@ -1,7 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "../headers/simulations/RandomWalkSimulation.h"
 #include "iostream"
-#include "math.h"
 
 //TODO: Fix Make file location
 //TODO: Add install script
@@ -10,7 +9,7 @@ sf::Color
 setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased,
               int nrOfImmune, int nrOfInfected) {
     sf::Image image = texture.copyToImage();
-    int maxHeight = 100;
+    int maxHeight = 200;
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
     for (int i = 0; i < susceptibleHeight; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Green);
@@ -29,7 +28,7 @@ setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, i
 }
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(GridUtils::getGridWidth(), GridUtils::getGridHeight()),
+    sf::RenderWindow window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()),
                             "Random Walk Disease Spread Simulation", sf::Style::Fullscreen);
     sf::Texture texture;
     if (!texture.loadFromFile("code/resources/images/background.png")) {
@@ -40,7 +39,7 @@ int main() {
     sf::Sprite background;
     background.setTexture(texture);
 
-    RandomWalkSimulation simulation(5000);
+    RandomWalkSimulation simulation(1000);
     int simulationIteration = 0;
     while (simulationIteration < 1000) {
         sf::Event event{};

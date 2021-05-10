@@ -297,29 +297,53 @@ code/main/src/subjectData/Subject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.s
 .PHONY : code/main/src/subjectData/Subject.cpp.s
 
-code/main/src/utils/GridUtils.o: code/main/src/utils/GridUtils.cpp.o
-.PHONY : code/main/src/utils/GridUtils.o
+code/main/src/utils/ConfigUtils.o: code/main/src/utils/ConfigUtils.cpp.o
+.PHONY : code/main/src/utils/ConfigUtils.o
 
 # target to build an object file
-code/main/src/utils/GridUtils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o
-.PHONY : code/main/src/utils/GridUtils.cpp.o
+code/main/src/utils/ConfigUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.o
+.PHONY : code/main/src/utils/ConfigUtils.cpp.o
 
-code/main/src/utils/GridUtils.i: code/main/src/utils/GridUtils.cpp.i
-.PHONY : code/main/src/utils/GridUtils.i
+code/main/src/utils/ConfigUtils.i: code/main/src/utils/ConfigUtils.cpp.i
+.PHONY : code/main/src/utils/ConfigUtils.i
 
 # target to preprocess a source file
-code/main/src/utils/GridUtils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.i
-.PHONY : code/main/src/utils/GridUtils.cpp.i
+code/main/src/utils/ConfigUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.i
+.PHONY : code/main/src/utils/ConfigUtils.cpp.i
 
-code/main/src/utils/GridUtils.s: code/main/src/utils/GridUtils.cpp.s
-.PHONY : code/main/src/utils/GridUtils.s
+code/main/src/utils/ConfigUtils.s: code/main/src/utils/ConfigUtils.cpp.s
+.PHONY : code/main/src/utils/ConfigUtils.s
 
 # target to generate assembly for a file
-code/main/src/utils/GridUtils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.s
-.PHONY : code/main/src/utils/GridUtils.cpp.s
+code/main/src/utils/ConfigUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.s
+.PHONY : code/main/src/utils/ConfigUtils.cpp.s
+
+code/main/src/window/WindowHandler.o: code/main/src/window/WindowHandler.cpp.o
+.PHONY : code/main/src/window/WindowHandler.o
+
+# target to build an object file
+code/main/src/window/WindowHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.o
+.PHONY : code/main/src/window/WindowHandler.cpp.o
+
+code/main/src/window/WindowHandler.i: code/main/src/window/WindowHandler.cpp.i
+.PHONY : code/main/src/window/WindowHandler.i
+
+# target to preprocess a source file
+code/main/src/window/WindowHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.i
+.PHONY : code/main/src/window/WindowHandler.cpp.i
+
+code/main/src/window/WindowHandler.s: code/main/src/window/WindowHandler.cpp.s
+.PHONY : code/main/src/window/WindowHandler.s
+
+# target to generate assembly for a file
+code/main/src/window/WindowHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.s
+.PHONY : code/main/src/window/WindowHandler.cpp.s
 
 # Help Target
 help:
@@ -351,9 +375,12 @@ help:
 	@echo "... code/main/src/subjectData/Subject.o"
 	@echo "... code/main/src/subjectData/Subject.i"
 	@echo "... code/main/src/subjectData/Subject.s"
-	@echo "... code/main/src/utils/GridUtils.o"
-	@echo "... code/main/src/utils/GridUtils.i"
-	@echo "... code/main/src/utils/GridUtils.s"
+	@echo "... code/main/src/utils/ConfigUtils.o"
+	@echo "... code/main/src/utils/ConfigUtils.i"
+	@echo "... code/main/src/utils/ConfigUtils.s"
+	@echo "... code/main/src/window/WindowHandler.o"
+	@echo "... code/main/src/window/WindowHandler.i"
+	@echo "... code/main/src/window/WindowHandler.s"
 .PHONY : help
 
 

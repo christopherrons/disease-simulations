@@ -13,8 +13,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Location.cpp.o.d"
   "CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o"
   "CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Subject.cpp.o.d"
-  "CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o"
-  "CMakeFiles/disease_simulations.dir/code/main/src/utils/GridUtils.cpp.o.d"
+  "CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.o"
+  "CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.o.d"
+  "CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.o"
+  "CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.o.d"
   "disease_simulations"
   "disease_simulations.pdb"
 )

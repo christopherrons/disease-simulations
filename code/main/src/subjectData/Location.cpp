@@ -6,8 +6,9 @@
 #include "../../headers/math/utils/MathematicalUtils.h"
 
 Location::Location() {
-    this->xCoordinate = MathematicalUtils::getUniformRandomNumber(0, GridUtils::getGridWidth());
-    this->yCoordinate = MathematicalUtils::getUniformRandomNumber(0, GridUtils::getGridHeight());
+    this->xCoordinate = MathematicalUtils::getUniformRandomNumber(0, ConfigUtils::getGridWidth());
+    this->yCoordinate = MathematicalUtils::getUniformRandomNumber(ConfigUtils::getSirPlotHeight(),
+                                                                  ConfigUtils::getGridHeight());
 }
 
 double Location::getXCoordinate() {
@@ -19,8 +20,9 @@ double Location::getYCoordinate() {
 }
 
 void Location::updateLocation() {
-    this->xCoordinate = getUpdateCoordinate(this->xCoordinate, 0, GridUtils::getGridWidth());
-    this->yCoordinate = getUpdateCoordinate(this->yCoordinate, 0, GridUtils::getGridHeight());
+    this->xCoordinate = getUpdateCoordinate(this->xCoordinate, 0, ConfigUtils::getGridWidth());
+    this->yCoordinate = getUpdateCoordinate(this->yCoordinate, ConfigUtils::getSirPlotHeight(),
+                                            ConfigUtils::getGridHeight());
 }
 
 double Location::getUpdateCoordinate(double coordinate, double min, double max) {

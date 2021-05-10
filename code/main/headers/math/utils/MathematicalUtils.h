@@ -12,7 +12,7 @@ class MathematicalUtils {
 public:
     static double getUniformRandomNumber(double min, double max);
 
-    static double calculateDistanceBetweenSubjects(Location* infectedLocation, Location* susceptibleLocation);
+    static double calculateDistanceBetweenSubjects(Location &infectedLocation, Location &susceptibleLocation);
 
 private:
 };

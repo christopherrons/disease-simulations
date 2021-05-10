@@ -14,12 +14,12 @@ add_executable(
         code/main/headers/subjectData/Location.h
         code/main/src/math/utils/MathematicalUtils.cpp
         code/main/headers/math/utils/MathematicalUtils.h
-        code/main/src/utils/GridUtils.cpp
-        code/main/headers/utils/GridUtils.h
+        code/main/src/utils/ConfigUtils.cpp
+        code/main/headers/utils/ConfigUtils.h
         code/main/src/math/InfectionSpreadCalculator.cpp
         code/main/headers/math/InfectionSpreadCalculator.h
         code/main/src/subjectData/HealthStatus.cpp
-        code/main/headers/subjectData/HealthStatus.h)
+        code/main/headers/subjectData/HealthStatus.h code/main/src/window/WindowHandler.cpp code/main/src/window/WindowHandler.h)
 
 target_link_libraries(disease_simulations
         -lsfml-graphics

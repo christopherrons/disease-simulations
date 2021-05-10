@@ -12,7 +12,7 @@ class RandomWalkSimulation {
 public:
     explicit RandomWalkSimulation(int nrOfSubjects);
 
-    std::vector<Subject> getSubjects();
+    std::vector<Subject> &getSubjects();
 
     void iterateSimulation();
 

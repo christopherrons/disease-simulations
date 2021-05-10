@@ -13,8 +13,9 @@ double MathematicalUtils::getUniformRandomNumber(double min, double max) {
     return distribution(generator);
 }
 
-double MathematicalUtils::calculateDistanceBetweenSubjects(Location* infectedLocation, Location* susceptibleLocation) {
-    double xDistance = pow(infectedLocation->getXCoordinate() - susceptibleLocation->getXCoordinate(), 2);
-    double yDistance = pow(infectedLocation->getYCoordinate() - susceptibleLocation->getYCoordinate(), 2);
+double MathematicalUtils::calculateDistanceBetweenSubjects(Location &infectedLocation, Location &susceptibleLocation) {
+    double xDistance = pow(infectedLocation.getXCoordinate() - susceptibleLocation.getXCoordinate(), 2);
+    double yDistance = pow(infectedLocation.getYCoordinate() - susceptibleLocation.getYCoordinate(), 2);
+    std::cout << sqrt(xDistance + yDistance) << "\n";
     return sqrt(xDistance + yDistance);
 }

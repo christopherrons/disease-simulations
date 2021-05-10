@@ -20,17 +20,19 @@ public:
 
     void updateHealthStatus();
 
-    sf::CircleShape getSubjectTexture();
+    sf::CircleShape &getSubjectTexture();
 
-    HealthStatus* getHealthStatus();
+    HealthStatus &getHealthStatus();
 
-    Location* getLocation();
-    int* getId();
+    Location &getLocation();
+
+    int getId();
 
 private:
     int id;
     Location location;
     HealthStatus healthStatus;
+    sf::CircleShape subjectShape;
 };
 
 
