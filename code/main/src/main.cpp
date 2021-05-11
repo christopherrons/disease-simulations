@@ -12,7 +12,7 @@ setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, i
     int maxHeight = ConfigUtils::getSirPlotHeight();
     int addBlackBorder = 3;
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
-   for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
+    for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Green);
     }
     int infectedHeight = (nrOfInfected * maxHeight) / nrOfSubjects;
@@ -20,11 +20,13 @@ setPixelColor(sf::Texture &texture, int simulationIteration, int nrOfSubjects, i
         image.setPixel(simulationIteration, i, sf::Color::Red);
     }
     int immuneHeight = (nrOfImmune * maxHeight) / nrOfSubjects;
-    for (int i = susceptibleHeight + infectedHeight; i < susceptibleHeight + infectedHeight + immuneHeight - addBlackBorder; i++) {
+    for (int i = susceptibleHeight + infectedHeight;
+         i < susceptibleHeight + infectedHeight + immuneHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Blue);
     }
     int deceasedHeight = (nrOfDeceased * maxHeight) / nrOfSubjects;
-    for (int i = susceptibleHeight + infectedHeight + immuneHeight; i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight - addBlackBorder; i++) {
+    for (int i = susceptibleHeight + infectedHeight + immuneHeight;
+         i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight - addBlackBorder; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Yellow);
     }
 

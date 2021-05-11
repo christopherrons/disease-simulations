@@ -22,7 +22,7 @@ void Subject::updateHealthStatus() {
     this->healthStatus.updateHealthStatus();
 }
 
-sf::CircleShape &Subject::getSubjectTexture() {
+const sf::CircleShape &Subject::getSubjectTexture() {
     this->subjectShape.setPosition(this->location.getXCoordinate(), this->location.getYCoordinate());
     if (this->healthStatus.isInfected()) {
         this->subjectShape.setFillColor(sf::Color::Red);
@@ -45,7 +45,7 @@ Location &Subject::getLocation() {
     return this->location;
 }
 
-int Subject::getId() {
+int Subject::getId() const {
     return this->id;
 }
 

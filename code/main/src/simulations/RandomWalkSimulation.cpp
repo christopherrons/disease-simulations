@@ -18,8 +18,7 @@ RandomWalkSimulation::RandomWalkSimulation(int nrOfSubjects) {
 
 void RandomWalkSimulation::initSubjects() {
     for (int i = 0; i < this->nrOfSubjects; i++) {
-        Subject subject = Subject(i);
-        this->subjects.emplace_back(subject);
+        this->subjects.emplace_back(Subject(i));
     }
 }
 
@@ -46,7 +45,7 @@ void RandomWalkSimulation::updateSickSubjectHealthStatus() {
 
 //TODO: Cleanup
 void RandomWalkSimulation::updateDiseaseSpread() {
-    int infectionSpreadRadius = 35;
+    int infectionSpreadRadius = 45;
     for (auto &subject : this->subjects) {
         if (!subject.getHealthStatus().isDeceased() && !subject.getHealthStatus().isImmune() &&
             subject.getHealthStatus().isInfected()) {
@@ -82,7 +81,7 @@ void RandomWalkSimulation::updatePopulationHealthState() {
             this->nrOfSusceptible++;
         }
     }
-    std::cout <<  this->nrOfInfected;
+    std::cout << this->nrOfInfected;
 }
 
 

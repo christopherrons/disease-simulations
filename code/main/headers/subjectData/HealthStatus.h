@@ -11,19 +11,19 @@ class HealthStatus {
 public:
     HealthStatus();
 
-    bool isInfected();
+    bool isInfected() const;
 
     void setIsInfected(bool infected);
 
-    bool isImmune();
+    bool isImmune() const;
 
     void setIsImmune(bool immune);
 
-    bool isDeceased();
+    bool isDeceased() const;
 
     void setIsDeceased(bool deceased);
 
-    bool isNrOfDaysSick();
+    bool isNrOfDaysSick() const;
 
     void setNrOfDaysSick(int currentNrOfDaysSick);
 

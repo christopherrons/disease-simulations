@@ -28,23 +28,23 @@ void HealthStatus::updateHealthStatus() {
     }
 }
 
-bool HealthStatus::isInfected() {
+bool HealthStatus::isInfected() const {
     return this->infected;
 }
 
-void HealthStatus::setIsInfected(bool isInfected) {
+void HealthStatus::setIsInfected(const bool isInfected) {
     this->infected = isInfected;
 }
 
-bool HealthStatus::isImmune() {
+bool HealthStatus::isImmune() const {
     return this->immune;
 }
 
-void HealthStatus::setIsImmune(bool isImmune) {
+void HealthStatus::setIsImmune(const bool isImmune) {
     this->immune = isImmune;
 }
 
-bool HealthStatus::isDeceased() {
+bool HealthStatus::isDeceased() const {
     return this->deceased;
 }
 
@@ -52,11 +52,11 @@ void HealthStatus::setIsDeceased(bool isDeceased) {
     this->deceased = isDeceased;
 }
 
-bool HealthStatus::isNrOfDaysSick() {
+bool HealthStatus::isNrOfDaysSick() const {
     return nrOfDaysSick;
 }
 
-void HealthStatus::setNrOfDaysSick(int currentNrOfDaysSick) {
+void HealthStatus::setNrOfDaysSick(const int currentNrOfDaysSick) {
     this->nrOfDaysSick = currentNrOfDaysSick;
 }
 

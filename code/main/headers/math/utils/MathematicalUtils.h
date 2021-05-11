@@ -10,9 +10,10 @@
 
 class MathematicalUtils {
 public:
-    static double getUniformRandomNumber(double min, double max);
+    static double getUniformRandomNumber(const double min, const double max);
 
-    static double calculateDistanceBetweenSubjects(Location &infectedLocation, Location &susceptibleLocation);
+    static double
+    calculateDistanceBetweenSubjects(const Location &infectedLocation, const Location &susceptibleLocation);
 
 private:
 };

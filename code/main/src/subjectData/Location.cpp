@@ -11,11 +11,11 @@ Location::Location() {
                                                                   ConfigUtils::getGridHeight());
 }
 
-double Location::getXCoordinate() {
+double Location::getXCoordinate() const {
     return this->xCoordinate;
 }
 
-double Location::getYCoordinate() {
+double Location::getYCoordinate() const {
     return this->yCoordinate;
 }
 
@@ -25,7 +25,7 @@ void Location::updateLocation() {
                                             ConfigUtils::getGridHeight());
 }
 
-double Location::getUpdateCoordinate(double coordinate, double min, double max) {
+double Location::getUpdateCoordinate(const double coordinate, const double min, const double max) const {
     double step = MathematicalUtils::getUniformRandomNumber(-3.5, 3.5);
     if (coordinate + step >= max || coordinate + step <= min) {
         return coordinate - 2 * step;

@@ -20,13 +20,13 @@ public:
 
     void updateHealthStatus();
 
-    sf::CircleShape &getSubjectTexture();
+    const sf::CircleShape &getSubjectTexture();
 
     HealthStatus &getHealthStatus();
 
     Location &getLocation();
 
-    int getId();
+    int getId() const;
 
 private:
     int id;

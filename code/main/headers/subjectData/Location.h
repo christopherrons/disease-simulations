@@ -16,14 +16,14 @@ public:
 
     void setYCoordinate(double yCoordinate);
 
-    double getXCoordinate();
+    double getXCoordinate() const;
 
-    double getYCoordinate();
+    double getYCoordinate() const;
 
     void updateLocation();
 
 private:
-    double getUpdateCoordinate(double coordinate, double min, double max);
+    double getUpdateCoordinate(double coordinate, double min, double max) const;
 
 private:
     double xCoordinate;
