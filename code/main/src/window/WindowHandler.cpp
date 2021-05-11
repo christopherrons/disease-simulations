@@ -8,7 +8,7 @@
 #include "../../headers/utils/ConfigUtils.h"
 
 WindowHandler::WindowHandler()
-        : window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML window"),
+        : window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML window", sf::Style::Fullscreen),
           backgroundTexture(sf::Texture()),
           backgroundSprite(sf::Sprite()) {
 
@@ -18,8 +18,8 @@ WindowHandler::WindowHandler()
 
 //TODO: Clean up
 void
-WindowHandler::setBackgroundPixelColor(int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased,
-                                       int nrOfImmune, int nrOfInfected) {
+WindowHandler::setBackgroundPixelColor(const int simulationIteration, const int nrOfSubjects, const int nrOfSusceptible,
+                                       const int nrOfDeceased, const int nrOfImmune, const int nrOfInfected) {
     sf::Image image = this->backgroundTexture.copyToImage();
     int maxHeight = ConfigUtils::getSirPlotHeight();
     int addBlackBorder = 3;
@@ -46,7 +46,7 @@ WindowHandler::setBackgroundPixelColor(int simulationIteration, int nrOfSubjects
 
 void WindowHandler::loadBackground() {
     if (!this->backgroundTexture.loadFromFile("code/resources/images/background.png")) {
-        std::cout << "Failed to load background";
+        std::cout << "Failed to load background" << std::endl;
     }
     this->backgroundSprite.setTexture(this->backgroundTexture);
 }

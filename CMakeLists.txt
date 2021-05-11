@@ -3,8 +3,7 @@ project(disease_simulations)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(
-        disease_simulations
+add_executable(disease_simulations
         code/main/src/main.cpp
         code/main/src/simulations/RandomWalkSimulation.cpp
         code/main/headers/simulations/RandomWalkSimulation.h

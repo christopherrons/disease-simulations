@@ -81,7 +81,7 @@ void RandomWalkSimulation::updatePopulationHealthState() {
             this->nrOfSusceptible++;
         }
     }
-    std::cout << this->nrOfInfected;
+   // std::cout << this->nrOfInfected;
 }
 
 
