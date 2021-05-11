@@ -290,6 +290,7 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o
  /home/christopher/versioned/disease-simulations/code/main/headers/subjectData/HealthStatus.h
  /home/christopher/versioned/disease-simulations/code/main/headers/math/InfectionSpreadCalculator.h
  /usr/include/c++/7/iostream
+ /home/christopher/versioned/disease-simulations/code/main/src/window/WindowHandler.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o
  /home/christopher/versioned/disease-simulations/code/main/src/math/InfectionSpreadCalculator.cpp

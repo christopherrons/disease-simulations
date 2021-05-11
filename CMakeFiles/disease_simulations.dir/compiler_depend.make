@@ -288,7 +288,8 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: code/main/src/main.
   code/main/headers/subjectData/Location.h \
   code/main/headers/subjectData/HealthStatus.h \
   code/main/headers/math/InfectionSpreadCalculator.h \
-  /usr/include/c++/7/iostream
+  /usr/include/c++/7/iostream \
+  code/main/src/window/WindowHandler.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.o: code/main/src/math/InfectionSpreadCalculator.cpp \
   /usr/include/stdc-predef.h \
@@ -1650,8 +1651,6 @@ CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.o: cod
   code/main/headers/utils/ConfigUtils.h
 
 
-code/main/src/window/WindowHandler.h:
-
 code/main/src/subjectData/Subject.cpp:
 
 code/main/src/subjectData/Location.cpp:
@@ -1669,6 +1668,8 @@ code/main/src/subjectData/HealthStatus.cpp:
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 code/main/src/math/InfectionSpreadCalculator.cpp:
+
+code/main/src/window/WindowHandler.h:
 
 /usr/include/c++/7/iostream:
 

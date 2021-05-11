@@ -9,25 +9,27 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 
 class WindowHandler {
-public:
-    explicit WindowHandler();
+private:
+    void loadBackground();
 
-    const sf::RenderWindow &getWindow() const;
+public:
+    WindowHandler();
 
     sf::Texture &getBackgroundTexture();
 
     sf::Sprite &getBackgroundSprite();
 
-    void setBackgroundPixelColor(int simulationIteration, int nrOfSubjects, int nrOfSusceptible,
-                                 int nrOfDeceased, int nrOfImmune, int nrOfInfected);
+    void setBackgroundPixelColor(int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased,
+                                 int nrOfImmune, int nrOfInfected);
+
+    void drawBackground();
 
 private:
-    void loadBackground();
-
-private:
-    sf::RenderWindow window;
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
+
+public:
+    sf::RenderWindow window;
 };
 
 #endif //DISEASE_SIMULATIONS_WINDOWHANDLER_H
