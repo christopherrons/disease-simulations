@@ -29,6 +29,8 @@ public:
 
     void updateHealthStatus();
 
+    bool isSusceptible();
+
 private:
     bool infected;
     bool immune;

@@ -129,6 +129,30 @@ disease_simulations/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/build
 .PHONY : disease_simulations/fast
 
+code/main/src/gui/WindowHandler.o: code/main/src/gui/WindowHandler.cpp.o
+.PHONY : code/main/src/gui/WindowHandler.o
+
+# target to build an object file
+code/main/src/gui/WindowHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o
+.PHONY : code/main/src/gui/WindowHandler.cpp.o
+
+code/main/src/gui/WindowHandler.i: code/main/src/gui/WindowHandler.cpp.i
+.PHONY : code/main/src/gui/WindowHandler.i
+
+# target to preprocess a source file
+code/main/src/gui/WindowHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.i
+.PHONY : code/main/src/gui/WindowHandler.cpp.i
+
+code/main/src/gui/WindowHandler.s: code/main/src/gui/WindowHandler.cpp.s
+.PHONY : code/main/src/gui/WindowHandler.s
+
+# target to generate assembly for a file
+code/main/src/gui/WindowHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.s
+.PHONY : code/main/src/gui/WindowHandler.cpp.s
+
 code/main/src/main.o: code/main/src/main.cpp.o
 .PHONY : code/main/src/main.o
 
@@ -177,6 +201,30 @@ code/main/src/math/InfectionSpreadCalculator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/InfectionSpreadCalculator.cpp.s
 .PHONY : code/main/src/math/InfectionSpreadCalculator.cpp.s
 
+code/main/src/math/SweepPruneAlgorithm.o: code/main/src/math/SweepPruneAlgorithm.cpp.o
+.PHONY : code/main/src/math/SweepPruneAlgorithm.o
+
+# target to build an object file
+code/main/src/math/SweepPruneAlgorithm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/SweepPruneAlgorithm.cpp.o
+.PHONY : code/main/src/math/SweepPruneAlgorithm.cpp.o
+
+code/main/src/math/SweepPruneAlgorithm.i: code/main/src/math/SweepPruneAlgorithm.cpp.i
+.PHONY : code/main/src/math/SweepPruneAlgorithm.i
+
+# target to preprocess a source file
+code/main/src/math/SweepPruneAlgorithm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/SweepPruneAlgorithm.cpp.i
+.PHONY : code/main/src/math/SweepPruneAlgorithm.cpp.i
+
+code/main/src/math/SweepPruneAlgorithm.s: code/main/src/math/SweepPruneAlgorithm.cpp.s
+.PHONY : code/main/src/math/SweepPruneAlgorithm.s
+
+# target to generate assembly for a file
+code/main/src/math/SweepPruneAlgorithm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/math/SweepPruneAlgorithm.cpp.s
+.PHONY : code/main/src/math/SweepPruneAlgorithm.cpp.s
+
 code/main/src/math/utils/MathematicalUtils.o: code/main/src/math/utils/MathematicalUtils.cpp.o
 .PHONY : code/main/src/math/utils/MathematicalUtils.o
 
@@ -224,6 +272,30 @@ code/main/src/simulations/RandomWalkSimulation.s: code/main/src/simulations/Rand
 code/main/src/simulations/RandomWalkSimulation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulation.cpp.s
 .PHONY : code/main/src/simulations/RandomWalkSimulation.cpp.s
+
+code/main/src/subjectData/Grid.o: code/main/src/subjectData/Grid.cpp.o
+.PHONY : code/main/src/subjectData/Grid.o
+
+# target to build an object file
+code/main/src/subjectData/Grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Grid.cpp.o
+.PHONY : code/main/src/subjectData/Grid.cpp.o
+
+code/main/src/subjectData/Grid.i: code/main/src/subjectData/Grid.cpp.i
+.PHONY : code/main/src/subjectData/Grid.i
+
+# target to preprocess a source file
+code/main/src/subjectData/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Grid.cpp.i
+.PHONY : code/main/src/subjectData/Grid.cpp.i
+
+code/main/src/subjectData/Grid.s: code/main/src/subjectData/Grid.cpp.s
+.PHONY : code/main/src/subjectData/Grid.s
+
+# target to generate assembly for a file
+code/main/src/subjectData/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Grid.cpp.s
+.PHONY : code/main/src/subjectData/Grid.cpp.s
 
 code/main/src/subjectData/HealthStatus.o: code/main/src/subjectData/HealthStatus.cpp.o
 .PHONY : code/main/src/subjectData/HealthStatus.o
@@ -321,30 +393,6 @@ code/main/src/utils/ConfigUtils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/utils/ConfigUtils.cpp.s
 .PHONY : code/main/src/utils/ConfigUtils.cpp.s
 
-code/main/src/window/WindowHandler.o: code/main/src/window/WindowHandler.cpp.o
-.PHONY : code/main/src/window/WindowHandler.o
-
-# target to build an object file
-code/main/src/window/WindowHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.o
-.PHONY : code/main/src/window/WindowHandler.cpp.o
-
-code/main/src/window/WindowHandler.i: code/main/src/window/WindowHandler.cpp.i
-.PHONY : code/main/src/window/WindowHandler.i
-
-# target to preprocess a source file
-code/main/src/window/WindowHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.i
-.PHONY : code/main/src/window/WindowHandler.cpp.i
-
-code/main/src/window/WindowHandler.s: code/main/src/window/WindowHandler.cpp.s
-.PHONY : code/main/src/window/WindowHandler.s
-
-# target to generate assembly for a file
-code/main/src/window/WindowHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/disease_simulations.dir/build.make CMakeFiles/disease_simulations.dir/code/main/src/window/WindowHandler.cpp.s
-.PHONY : code/main/src/window/WindowHandler.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -354,18 +402,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... disease_simulations"
+	@echo "... code/main/src/gui/WindowHandler.o"
+	@echo "... code/main/src/gui/WindowHandler.i"
+	@echo "... code/main/src/gui/WindowHandler.s"
 	@echo "... code/main/src/main.o"
 	@echo "... code/main/src/main.i"
 	@echo "... code/main/src/main.s"
 	@echo "... code/main/src/math/InfectionSpreadCalculator.o"
 	@echo "... code/main/src/math/InfectionSpreadCalculator.i"
 	@echo "... code/main/src/math/InfectionSpreadCalculator.s"
+	@echo "... code/main/src/math/SweepPruneAlgorithm.o"
+	@echo "... code/main/src/math/SweepPruneAlgorithm.i"
+	@echo "... code/main/src/math/SweepPruneAlgorithm.s"
 	@echo "... code/main/src/math/utils/MathematicalUtils.o"
 	@echo "... code/main/src/math/utils/MathematicalUtils.i"
 	@echo "... code/main/src/math/utils/MathematicalUtils.s"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.o"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.i"
 	@echo "... code/main/src/simulations/RandomWalkSimulation.s"
+	@echo "... code/main/src/subjectData/Grid.o"
+	@echo "... code/main/src/subjectData/Grid.i"
+	@echo "... code/main/src/subjectData/Grid.s"
 	@echo "... code/main/src/subjectData/HealthStatus.o"
 	@echo "... code/main/src/subjectData/HealthStatus.i"
 	@echo "... code/main/src/subjectData/HealthStatus.s"
@@ -378,9 +435,6 @@ help:
 	@echo "... code/main/src/utils/ConfigUtils.o"
 	@echo "... code/main/src/utils/ConfigUtils.i"
 	@echo "... code/main/src/utils/ConfigUtils.s"
-	@echo "... code/main/src/window/WindowHandler.o"
-	@echo "... code/main/src/window/WindowHandler.i"
-	@echo "... code/main/src/window/WindowHandler.s"
 .PHONY : help
 
 

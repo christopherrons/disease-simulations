@@ -11,7 +11,7 @@ Subject::Subject(int id) {
     this->id = id;
     this->location = Location();
     this->healthStatus = HealthStatus();
-    this->subjectShape = sf::CircleShape(2);
+    this->subjectShape = sf::CircleShape(4);
 }
 
 void Subject::updateLocation() {

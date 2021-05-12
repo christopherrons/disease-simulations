@@ -4,11 +4,11 @@
 
 #include <iostream>
 #include <SFML/Graphics/Sprite.hpp>
-#include "WindowHandler.h"
+#include "../../headers/gui/WindowHandler.h"
 #include "../../headers/utils/ConfigUtils.h"
 
 WindowHandler::WindowHandler()
-        : window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML window", sf::Style::Fullscreen),
+        : window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui", sf::Style::Fullscreen),
           backgroundTexture(sf::Texture()),
           backgroundSprite(sf::Sprite()) {
 

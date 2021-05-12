@@ -13,6 +13,8 @@ public:
     static int getGridHeight();
 
     static int getSirPlotHeight();
+
+    static double nrOfGrids();
 };
 
 

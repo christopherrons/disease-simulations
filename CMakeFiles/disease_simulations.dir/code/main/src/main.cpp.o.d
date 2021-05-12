@@ -225,5 +225,7 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: \
  /home/christopher/versioned/disease-simulations/code/main/src/../headers/simulations/../subjectData/../math/utils/../../subjectData/Location.h \
  /home/christopher/versioned/disease-simulations/code/main/src/../headers/simulations/../subjectData/HealthStatus.h \
  /home/christopher/versioned/disease-simulations/code/main/src/../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/../headers/simulations/../../src/subjectData/Grid.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/../headers/simulations/../../src/subjectData/../../headers/subjectData/Subject.h \
  /usr/include/c++/7/iostream \
- /home/christopher/versioned/disease-simulations/code/main/src/window/WindowHandler.h
+ /home/christopher/versioned/disease-simulations/code/main/src/../headers/gui/WindowHandler.h

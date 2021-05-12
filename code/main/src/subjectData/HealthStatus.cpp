@@ -60,6 +60,10 @@ void HealthStatus::setNrOfDaysSick(const int currentNrOfDaysSick) {
     this->nrOfDaysSick = currentNrOfDaysSick;
 }
 
+bool HealthStatus::isSusceptible() {
+    return !this->isDeceased() && !this->isImmune() && !this->isInfected();
+}
+
 
 
 

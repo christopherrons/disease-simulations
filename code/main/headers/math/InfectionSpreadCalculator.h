@@ -21,6 +21,7 @@ public:
 
     static bool isImmune();
 
+    static int getInfectionSpreadRadius();
 
 private:
 

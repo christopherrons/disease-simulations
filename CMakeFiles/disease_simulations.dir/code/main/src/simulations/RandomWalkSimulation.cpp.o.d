@@ -223,4 +223,8 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/MathematicalUtils.h \
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../math/utils/../../subjectData/Location.h \
  /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/HealthStatus.h \
- /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../subjectData/../../headers/math/InfectionSpreadCalculator.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../../src/subjectData/Grid.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/simulations/../../src/subjectData/../../headers/subjectData/Subject.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/SweepPruneAlgorithm.h \
+ /home/christopher/versioned/disease-simulations/code/main/src/simulations/../../headers/math/../subjectData/Subject.h

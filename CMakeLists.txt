@@ -3,7 +3,8 @@ project(disease_simulations)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(disease_simulations
+add_executable(
+        disease_simulations
         code/main/src/main.cpp
         code/main/src/simulations/RandomWalkSimulation.cpp
         code/main/headers/simulations/RandomWalkSimulation.h
@@ -18,7 +19,7 @@ add_executable(disease_simulations
         code/main/src/math/InfectionSpreadCalculator.cpp
         code/main/headers/math/InfectionSpreadCalculator.h
         code/main/src/subjectData/HealthStatus.cpp
-        code/main/headers/subjectData/HealthStatus.h code/main/src/window/WindowHandler.cpp code/main/src/window/WindowHandler.h)
+        code/main/headers/subjectData/HealthStatus.h code/main/src/gui/WindowHandler.cpp code/main/headers/gui/WindowHandler.h code/main/src/math/SweepPruneAlgorithm.cpp code/main/headers/math/SweepPruneAlgorithm.h code/main/src/subjectData/Grid.cpp code/main/src/subjectData/Grid.h)
 
 target_link_libraries(disease_simulations
         -lsfml-graphics
