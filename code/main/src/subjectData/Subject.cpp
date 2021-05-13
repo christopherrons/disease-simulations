@@ -25,14 +25,14 @@ void Subject::updateHealthStatus() {
 const sf::CircleShape &Subject::getSubjectTexture() {
     this->subjectShape.setPosition(this->location.getXCoordinate(), this->location.getYCoordinate());
     if (this->healthStatus.isInfected()) {
-        this->subjectShape.setFillColor(sf::Color::Red);
+        this->subjectShape.setFillColor(ConfigUtils::infectedColor());
     } else if (this->healthStatus.isImmune()) {
-        this->subjectShape.setFillColor(sf::Color::Blue);
+        this->subjectShape.setFillColor(ConfigUtils::immuneColor());
     } else if (this->healthStatus.isDeceased()) {
-        this->subjectShape.setFillColor(sf::Color::Magenta);
-        this->subjectShape.setRadius(3.5);
+        this->subjectShape.setFillColor(ConfigUtils::deseasedColor());
+        this->subjectShape.setRadius(5);
     } else {
-        this->subjectShape.setFillColor(sf::Color::Green);
+        this->subjectShape.setFillColor(ConfigUtils::susceptibleColor());
     }
     return this->subjectShape;
 }

@@ -36,7 +36,6 @@ private:
     bool immune;
     bool deceased;
     int nrOfDaysSick;
-
 };
 
 

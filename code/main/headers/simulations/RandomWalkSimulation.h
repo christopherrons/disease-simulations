@@ -33,7 +33,7 @@ private:
 
     void updateDiseaseSpreadGridPartitioning();
 
-    void addSubjectToGrid(Subject &subject);
+    void addSubjectsToGrids();
 
 private:
     std::vector<Subject> subjects;

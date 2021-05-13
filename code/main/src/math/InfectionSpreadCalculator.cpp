@@ -16,7 +16,7 @@ bool InfectionSpreadCalculator::isInitialInfection() {
 }
 
 bool InfectionSpreadCalculator::isInfectionSpread() {
-    const int infectionSpreadRate = 5;
+    const int infectionSpreadRate = 7;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionSpreadRate) {
         return true;
     }
@@ -24,7 +24,7 @@ bool InfectionSpreadCalculator::isInfectionSpread() {
 }
 
 bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
-    const double recoveryRate = 5 + daysSickWeight * 0.1;
+    const double recoveryRate = 4 + daysSickWeight * 0.1;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= recoveryRate) {
         return true;
     }

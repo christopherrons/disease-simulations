@@ -17,5 +17,27 @@ int ConfigUtils::getSirPlotHeight() {
 }
 
 double ConfigUtils::nrOfGridsPerRow() {
-    return 30.0;
+    return 10.0;
 }
+
+sf::Color ConfigUtils::infectedColor() {
+    return {238, 105, 105};
+}
+
+sf::Color ConfigUtils::susceptibleColor() {
+    return {44,206,125};
+}
+
+sf::Color ConfigUtils::immuneColor() {
+    return {38, 82, 181};
+}
+
+sf::Color ConfigUtils::deseasedColor() {
+    return {138,21,174};
+}
+
+float ConfigUtils::simulationFrameRate() {
+    return 1.f / 60;
+}
+
+

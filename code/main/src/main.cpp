@@ -6,6 +6,7 @@
 //
 // ------------------------------------------------------------------------------
 #include <SFML/Graphics.hpp>
+#include <thread>
 #include "../headers/simulations/RandomWalkSimulation.h"
 #include "iostream"
 #include "../headers/gui/WindowHandler.h"
@@ -17,34 +18,24 @@ int main() {
 
     sf::Clock clock;
     sf::Time timeSinceLastUpdate;
-    double frameRate = 1.f / 60;
 
     RandomWalkSimulation simulation(nrOfSubjects);
-    int simulationIteration = 0;
 
+    int simulationIteration = 0;
+    windowHandler.draw(simulation, simulationIteration);
+    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     while (simulationIteration < ConfigUtils::getGridWidth()) {
         timeSinceLastUpdate += clock.restart();
+
         sf::Event event{};
         while (windowHandler.window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 windowHandler.window.close();
         }
 
-        if (timeSinceLastUpdate.asSeconds() >= frameRate) {
-            windowHandler.window.clear();
-            windowHandler.drawBackground();
-            for (auto &subject : simulation.getSubjects()) {
-                windowHandler.window.draw(subject.getSubjectTexture());
-            }
-            windowHandler.drawStatistics(simulation.nrOfSusceptible, simulation.nrOfDeceased,
-                                         simulation.nrOfImmune, simulation.nrOfInfected);
-            windowHandler.drawSirPlot(simulationIteration, simulation.nrOfSubjects,
-                                      simulation.nrOfSusceptible, simulation.nrOfDeceased,
-                                      simulation.nrOfImmune, simulation.nrOfInfected);
-
+        if (timeSinceLastUpdate.asSeconds() >= ConfigUtils::simulationFrameRate()) {
+            windowHandler.draw(simulation, simulationIteration);
             simulation.iterateSimulation();
-            windowHandler.window.display();
-
             simulationIteration++;
         }
     }

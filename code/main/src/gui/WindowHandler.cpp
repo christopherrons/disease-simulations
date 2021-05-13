@@ -7,14 +7,16 @@
 #include <SFML/Graphics/Text.hpp>
 #include "../../headers/gui/WindowHandler.h"
 #include "../../headers/utils/ConfigUtils.h"
+#include <cmath>
 
-WindowHandler::WindowHandler(int nrOfSubjects)
-        : window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui",
+WindowHandler::WindowHandler(double nrOfSubjects)
+        : nrOfSubjects(nrOfSubjects),
+          window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui",
                  sf::Style::Fullscreen),
           backgroundTexture(sf::Texture()),
           backgroundSprite(sf::Sprite()),
           textFont(sf::Font()),
-          totalSubjectsText(sf::Text("Total Subjects: " + std::to_string(nrOfSubjects), textFont)),
+          totalSubjectsText(sf::Text("Total Subjects: " + std::to_string((int) nrOfSubjects), textFont)),
           nrOfDeceasedText(sf::Text("", textFont)),
           nrOfImmuneText(sf::Text("", textFont)),
           nrOfInfectedText(sf::Text("", textFont)),
@@ -65,24 +67,24 @@ void WindowHandler::drawSirPlot(const int simulationIteration, const int nrOfSub
 
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
     for (int i = 0; i < susceptibleHeight - nrOfBlackPixels; i++) {
-        image.setPixel(simulationIteration, i, sf::Color::Green);
+        image.setPixel(simulationIteration, i, ConfigUtils::susceptibleColor());
     }
 
     int infectedHeight = (nrOfInfected * maxHeight) / nrOfSubjects;
     for (int i = susceptibleHeight; i < susceptibleHeight + infectedHeight - nrOfBlackPixels; i++) {
-        image.setPixel(simulationIteration, i, sf::Color::Red);
+        image.setPixel(simulationIteration, i, ConfigUtils::infectedColor());
     }
 
     int immuneHeight = (nrOfImmune * maxHeight) / nrOfSubjects;
     for (int i = susceptibleHeight + infectedHeight;
          i < susceptibleHeight + infectedHeight + immuneHeight - nrOfBlackPixels; i++) {
-        image.setPixel(simulationIteration, i, sf::Color::Blue);
+        image.setPixel(simulationIteration, i, ConfigUtils::immuneColor());
     }
 
     int deceasedHeight = (nrOfDeceased * maxHeight) / nrOfSubjects;
     for (int i = susceptibleHeight + infectedHeight + immuneHeight;
          i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight; i++) {
-        image.setPixel(simulationIteration, i, sf::Color::Magenta);
+        image.setPixel(simulationIteration, i, ConfigUtils::deseasedColor());
     }
     this->backgroundTexture.loadFromImage(image);
 }
@@ -116,17 +118,40 @@ void WindowHandler::drawStatistics(const int nrOfSusceptible, const int nrOfDece
                                    const int nrOfInfected) {
     this->window.draw(this->totalSubjectsText);
 
-    this->nrOfDeceasedText.setString("(Magenta) Deceased: " + std::to_string(nrOfDeceased));
+    this->nrOfDeceasedText.setString("(Magenta) Deceased: " + std::to_string(nrOfDeceased) + " / " +
+                                     std::to_string((nrOfDeceased / this->nrOfSubjects) * 100).substr(0, 4) + " %");
     this->window.draw(this->nrOfDeceasedText);
 
-    this->nrOfSusceptibleText.setString("(Green) Susceptible : " + std::to_string(nrOfSusceptible));
+    this->nrOfSusceptibleText.setString("(Green) Susceptible : " + std::to_string(nrOfSusceptible) + " / " +
+                                        std::to_string((nrOfSusceptible / this->nrOfSubjects) * 100).substr(0, 4) +
+                                        "%");
     this->window.draw(this->nrOfSusceptibleText);
 
-    this->nrOfImmuneText.setString("(Blue) Immune : " + std::to_string(nrOfImmune));
+    this->nrOfImmuneText.setString("(Blue) Immune : " + std::to_string(nrOfImmune) + " / " +
+                                   std::to_string((nrOfImmune / this->nrOfSubjects) * 100).substr(0, 4) + "%");
     this->window.draw(this->nrOfImmuneText);
 
-    this->nrOfInfectedText.setString("(Red) Infected: " + std::to_string(nrOfInfected));
+    this->nrOfInfectedText.setString("(Red) Infected: " + std::to_string(nrOfInfected) + " / " +
+                                     std::to_string((nrOfInfected / this->nrOfSubjects) * 100).substr(0, 4) +
+                                     "%");
     this->window.draw(this->nrOfInfectedText);
 }
+
+void WindowHandler::draw(RandomWalkSimulation &simulation, int simulationIteration) {
+    this->window.clear();
+    this->drawBackground();
+    for (auto &subject : simulation.getSubjects()) {
+        this->window.draw(subject.getSubjectTexture());
+    }
+    this->drawStatistics(simulation.nrOfSusceptible, simulation.nrOfDeceased,
+                         simulation.nrOfImmune, simulation.nrOfInfected);
+    this->drawSirPlot(simulationIteration, simulation.nrOfSubjects,
+                      simulation.nrOfSusceptible, simulation.nrOfDeceased,
+                      simulation.nrOfImmune, simulation.nrOfInfected);
+
+    this->window.display();
+}
+
+
 
 

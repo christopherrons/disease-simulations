@@ -6,7 +6,7 @@ A subject in the population can be in one if four states:
 1. Immune
 1. Deceased
 
-The rate at which the subjects change states can is altered with the following variable:
+The rate at which the subjects change states is dependent on the following variables:
 * Initial number of infected
 * Recovery rate once infected
 * Immune rate if recovered

@@ -8,6 +8,7 @@
 #include <SFML/Graphics/Texture.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics/Font.hpp>
+#include "../simulations/RandomWalkSimulation.h"
 
 class WindowHandler {
 private:
@@ -15,22 +16,25 @@ private:
 
     void loadFont();
 
+    void drawStatistics(const int nrOfSusceptible, const int nrOfDeceased, const int nrOfImmune,
+                        const int nrOfInfected);
+
+    void drawSirPlot(int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased, int nrOfImmune,
+                     int nrOfInfected);
+
 public:
-    WindowHandler(int nrOfSubjects);
+    WindowHandler(double nrOfSubjects);
 
     sf::Texture &getBackgroundTexture();
 
     sf::Sprite &getBackgroundSprite();
 
-    void drawSirPlot(int simulationIteration, int nrOfSubjects, int nrOfSusceptible, int nrOfDeceased,
-                     int nrOfImmune, int nrOfInfected);
-
     void drawBackground();
 
-    void drawStatistics(const int nrOfSusceptible, const int nrOfDeceased, const int nrOfImmune,
-                        const int nrOfInfected);
+    void draw(RandomWalkSimulation &simulation, int simulationIteration);
 
 private:
+    double nrOfSubjects;
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
     sf::Font textFont;
