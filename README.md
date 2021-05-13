@@ -17,7 +17,7 @@ The rate at which the subjects change states is dependent on the following varia
 * Step length when walking randomly
 
 # Installation Linux Ubuntu
-The simulation requires SFML to run. Simple run the setup.sh script to download SFML:
+The simulation requires SFML to run and FFmpeg to create a recording. Simple run the setup.sh script to download SFML:
 `./setup.sh`
 
 # Running the Simulation

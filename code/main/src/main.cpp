@@ -12,6 +12,11 @@
 #include "../headers/gui/WindowHandler.h"
 
 int main() {
+
+    std::string recordOption;
+    std::cout << "\nType record if you wish to record: ";
+    std::cin >> recordOption;
+
     int nrOfSubjects = 1500;
 
     WindowHandler windowHandler(nrOfSubjects);
@@ -36,6 +41,10 @@ int main() {
 
         if (timeSinceLastUpdate.asSeconds() >= ConfigUtils::simulationFrameRate()) {
             windowHandler.draw(simulation, simulationIteration);
+            if (recordOption == "record") {
+                windowHandler.takeScreenShot(simulationIteration);
+            }
+
             simulation.iterateSimulation();
             simulationIteration++;
         }

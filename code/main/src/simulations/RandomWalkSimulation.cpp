@@ -137,9 +137,7 @@ void RandomWalkSimulation::updateDiseaseSpreadSweepAndPrune() {
 //TODO: Fix so subjects on the opposite end of a grid line are also compared
 void RandomWalkSimulation::updateDiseaseSpreadGridPartitioning() {
     std::vector<Subject> updatedSubjects;
-    std::cout << "Iteration" << std::endl;
     for (auto &grid: this->grids) {
-        std::cout << grid.subjectsInGrid.size() << std::endl;
         for (auto &subjectInSpreadRadius: grid.subjectsInGrid) {
             updatedSubjects.push_back(subjectInSpreadRadius);
             if (subjectInSpreadRadius.getHealthStatus().isInfected()) {

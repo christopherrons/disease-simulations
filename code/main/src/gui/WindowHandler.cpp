@@ -150,6 +150,17 @@ void WindowHandler::draw(RandomWalkSimulation &simulation, int simulationIterati
                       simulation.nrOfImmune, simulation.nrOfInfected);
 
     this->window.display();
+    }
+
+void WindowHandler::takeScreenShot(int simulationIteration) {
+    sf::Texture texture;
+    texture.create(window.getSize().x, window.getSize().y);
+    texture.update(window);
+    if (texture.copyToImage().saveToFile("../recording/images/screenshot_" + std::to_string(simulationIteration) + ".png"))   {
+        std::cout << "Screenshot saved" << std::endl;
+    } else {
+        std::cout << "NOT SAVED" << std::endl;
+    }
 }
 
 

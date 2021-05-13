@@ -33,6 +33,8 @@ public:
 
     void draw(RandomWalkSimulation &simulation, int simulationIteration);
 
+    void takeScreenShot(int simulationIteration);
+
 private:
     double nrOfSubjects;
     sf::Texture backgroundTexture;
