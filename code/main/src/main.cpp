@@ -10,9 +10,6 @@
 #include "iostream"
 #include "../headers/gui/WindowHandler.h"
 
-//TODO: Fix Make file location
-//TODO: Add install script
-//TODO: Switch to initialization list
 int main() {
     int nrOfSubjects = 1500;
     WindowHandler windowHandler(nrOfSubjects);

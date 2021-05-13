@@ -5,12 +5,11 @@
 #include <iostream>
 #include "../../headers/subjectData/HealthStatus.h"
 
-
-HealthStatus::HealthStatus() {
-    this->infected = InfectionSpreadCalculator::isInitialInfection();
-    this->immune = false;
-    this->deceased = false;
-    this->nrOfDaysSick = 0;
+HealthStatus::HealthStatus()
+        : infected(InfectionSpreadCalculator::isInitialInfection()),
+          immune(false),
+          deceased(false),
+          nrOfDaysSick(0) {
 }
 
 void HealthStatus::updateHealthStatus() {

@@ -7,11 +7,11 @@
 #include <iostream>
 #include "../../headers/subjectData/Subject.h"
 
-Subject::Subject(int id) {
-    this->id = id;
-    this->location = Location();
-    this->healthStatus = HealthStatus();
-    this->subjectShape = sf::CircleShape(4);
+Subject::Subject(int id)
+        : id(id),
+          location(Location()),
+          healthStatus(HealthStatus()),
+          subjectShape(sf::CircleShape(4)) {
 }
 
 void Subject::updateLocation() {

@@ -5,10 +5,10 @@
 #include "../../headers/subjectData/Location.h"
 #include "../../headers/math/utils/MathematicalUtils.h"
 
-Location::Location() {
-    this->xCoordinate = MathematicalUtils::getUniformRandomNumber(0, ConfigUtils::getGridWidth());
-    this->yCoordinate = MathematicalUtils::getUniformRandomNumber(ConfigUtils::getSirPlotHeight(),
-                                                                  ConfigUtils::getGridHeight());
+Location::Location()
+        : xCoordinate(MathematicalUtils::getUniformRandomNumber(0, ConfigUtils::getGridWidth())),
+          yCoordinate(MathematicalUtils::getUniformRandomNumber(ConfigUtils::getSirPlotHeight(),
+                                                                ConfigUtils::getGridHeight())) {
 }
 
 double Location::getXCoordinate() const {
