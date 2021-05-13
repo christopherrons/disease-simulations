@@ -29,7 +29,7 @@ const sf::CircleShape &Subject::getSubjectTexture() {
     } else if (this->healthStatus.isImmune()) {
         this->subjectShape.setFillColor(sf::Color::Blue);
     } else if (this->healthStatus.isDeceased()) {
-        this->subjectShape.setFillColor(sf::Color::Yellow);
+        this->subjectShape.setFillColor(sf::Color::Magenta);
         this->subjectShape.setRadius(3.5);
     } else {
         this->subjectShape.setFillColor(sf::Color::Green);

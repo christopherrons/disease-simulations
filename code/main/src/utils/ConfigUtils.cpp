@@ -16,6 +16,6 @@ int ConfigUtils::getSirPlotHeight() {
     return 200;
 }
 
-double ConfigUtils::nrOfGrids() {
-    return 4.0;
+double ConfigUtils::nrOfGridsPerRow() {
+    return 30.0;
 }

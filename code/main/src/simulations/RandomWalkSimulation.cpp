@@ -19,11 +19,14 @@ RandomWalkSimulation::RandomWalkSimulation(int nrOfSubjects) {
 }
 
 void RandomWalkSimulation::initGrid() {
-    for (int i = 1; i < ConfigUtils::nrOfGrids() + 1; i++) {
-        this->grids.emplace_back(ConfigUtils::getGridWidth() * (i - 1) / ConfigUtils::nrOfGrids(),
-                                 ConfigUtils::getGridWidth() * (i / ConfigUtils::nrOfGrids()),
-                                 ConfigUtils::getGridHeight() * (i - 1) / ConfigUtils::nrOfGrids(),
-                                 ConfigUtils::getGridHeight() * (i / ConfigUtils::nrOfGrids()));
+    double nrGridsPerRow = ConfigUtils::nrOfGridsPerRow();
+    for (int y = 1; y < nrGridsPerRow + 1; y++) {
+        for (int x = 1; x < nrGridsPerRow + 1; x++) {
+            this->grids.emplace_back(ConfigUtils::getGridWidth() * (x - 1) / nrGridsPerRow,
+                                     ConfigUtils::getGridWidth() * (x / nrGridsPerRow),
+                                     ConfigUtils::getGridHeight() * (y - 1) / nrGridsPerRow,
+                                     ConfigUtils::getGridHeight() * (y / nrGridsPerRow));
+        }
     }
 }
 
@@ -36,15 +39,7 @@ void RandomWalkSimulation::initSubjects() {
 }
 
 void RandomWalkSimulation::addSubjectToGrid(Subject &subject) {
-  //  std::cout << "Grids" << std::endl;
     for (auto &grid: this->grids) {
-        ///   std::cout << "XLow" << grid.getXCoordinateUpperLower() << std::endl;
-        //  std::cout << "XHigh" << grid.getXCoordinateUpperBound() << std::endl;
-        //  std::cout << "YLow" << grid.getYCoordinateUpperLower() << std::endl;
-        // std::cout << "YHigh" <<  grid.getYCoordinateUpperBound()<< std::endl;
-
-       // std::cout << "" << std::endl;
-
         if (subject.getLocation().getXCoordinate() >= grid.getXCoordinateUpperLower() &&
             subject.getLocation().getXCoordinate() <= grid.getXCoordinateUpperBound() &&
             subject.getLocation().getYCoordinate() >= grid.getYCoordinateUpperLower() &&
@@ -54,19 +49,17 @@ void RandomWalkSimulation::addSubjectToGrid(Subject &subject) {
     }
 }
 
-
 std::vector<Subject> &RandomWalkSimulation::getSubjects() {
     return this->subjects;
 }
 
 void RandomWalkSimulation::iterateSimulation() {
     updateSickSubjectHealthStatus();
-    updateDiseaseSpreadSweepAndPrune();
+    updateDiseaseSpreadBruteForce();
     for (auto &subject: this->subjects) {
         if (!subject.getHealthStatus().isDeceased()) {
             subject.updateLocation();
         }
-        addSubjectToGrid(subject);
     }
     updatePopulationHealthState();
 }
@@ -79,7 +72,6 @@ void RandomWalkSimulation::updateSickSubjectHealthStatus() {
 
 //TODO: Cleanup
 void RandomWalkSimulation::updateDiseaseSpreadBruteForce() {
-    int infectionSpreadRadius = 25;
     for (auto &subject : this->subjects) {
         if (!subject.getHealthStatus().isDeceased() && !subject.getHealthStatus().isImmune() &&
             subject.getHealthStatus().isInfected()) {
@@ -88,7 +80,7 @@ void RandomWalkSimulation::updateDiseaseSpreadBruteForce() {
                     !susceptibleSubject.getHealthStatus().isImmune() &&
                     !susceptibleSubject.getHealthStatus().isInfected()) {
                     if (MathematicalUtils::calculateDistanceBetweenSubjects(
-                            subject.getLocation(), susceptibleSubject.getLocation()) < infectionSpreadRadius) {
+                            subject.getLocation(), susceptibleSubject.getLocation()) < InfectionSpreadCalculator::getInfectionSpreadRadius()) {
                         if (InfectionSpreadCalculator::isInfectionSpread()) {
                             susceptibleSubject.getHealthStatus().setIsInfected(true);
                         }
@@ -99,13 +91,10 @@ void RandomWalkSimulation::updateDiseaseSpreadBruteForce() {
     }
 }
 
-//TODO: Cleanup
+//TODO: Cleanup and finish
 void RandomWalkSimulation::updateDiseaseSpreadSweepAndPrune() {
-    SweepPruneAlgorithm sweepPruneAlgorithm;
     std::vector<Subject> updatedSubjects;
-    std::cout << "\nNew teration" << std::endl;
-    for (auto &subjectsInSpreadRadius : sweepPruneAlgorithm.sweepAndPrune(this->subjects)) {
-        std::cout << "Sizer: " << subjectsInSpreadRadius.size() << std::endl;
+    for (auto &subjectsInSpreadRadius : SweepPruneAlgorithm::sweepAndPrune(this->subjects)) {
         for (auto &subjectInSpreadRadius: subjectsInSpreadRadius) {
             updatedSubjects.emplace_back(subjectInSpreadRadius);
             if (subjectInSpreadRadius.getHealthStatus().isInfected()) {
@@ -126,12 +115,10 @@ void RandomWalkSimulation::updateDiseaseSpreadSweepAndPrune() {
     subjects = updatedSubjects;
 }
 
-//TODO: Cleanup
+//TODO: Cleanup and finish
 void RandomWalkSimulation::updateDiseaseSpreadGridPartitioning() {
     std::vector<Subject> updatedSubjects;
-    std::cout << "\nNew teration" << std::endl;
     for (auto &grid: this->grids) {
-        std::cout << grid.subjectsInGrid.size() << std::endl;
         for (auto &subjectInSpreadRadius: grid.subjectsInGrid) {
             updatedSubjects.push_back(subjectInSpreadRadius);
             if (subjectInSpreadRadius.getHealthStatus().isInfected()) {

@@ -22,24 +22,24 @@ WindowHandler::setBackgroundPixelColor(const int simulationIteration, const int 
                                        const int nrOfDeceased, const int nrOfImmune, const int nrOfInfected) {
     sf::Image image = this->backgroundTexture.copyToImage();
     int maxHeight = ConfigUtils::getSirPlotHeight();
-    int addBlackBorder = 3;
+    int nrOfBackgroundPixels = 3;
     int susceptibleHeight = (nrOfSusceptible * maxHeight) / nrOfSubjects;
-    for (int i = 0; i < susceptibleHeight - addBlackBorder; i++) {
+    for (int i = 0; i < susceptibleHeight - nrOfBackgroundPixels; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Green);
     }
     int infectedHeight = (nrOfInfected * maxHeight) / nrOfSubjects;
-    for (int i = susceptibleHeight; i < susceptibleHeight + infectedHeight - addBlackBorder; i++) {
+    for (int i = susceptibleHeight; i < susceptibleHeight + infectedHeight - nrOfBackgroundPixels; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Red);
     }
     int immuneHeight = (nrOfImmune * maxHeight) / nrOfSubjects;
     for (int i = susceptibleHeight + infectedHeight;
-         i < susceptibleHeight + infectedHeight + immuneHeight - addBlackBorder; i++) {
+         i < susceptibleHeight + infectedHeight + immuneHeight - nrOfBackgroundPixels; i++) {
         image.setPixel(simulationIteration, i, sf::Color::Blue);
     }
     int deceasedHeight = (nrOfDeceased * maxHeight) / nrOfSubjects;
     for (int i = susceptibleHeight + infectedHeight + immuneHeight;
-         i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight - addBlackBorder; i++) {
-        image.setPixel(simulationIteration, i, sf::Color::Yellow);
+         i < susceptibleHeight + infectedHeight + immuneHeight + deceasedHeight; i++) {
+        image.setPixel(simulationIteration, i, sf::Color::Magenta);
     }
     this->backgroundTexture.loadFromImage(image);
 }

@@ -8,7 +8,7 @@
 InfectionSpreadCalculator::InfectionSpreadCalculator() = default;
 
 bool InfectionSpreadCalculator::isInitialInfection() {
-    const int infectionRate = 10;
+    const int infectionRate = 5;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionRate) {
         return true;
     }
@@ -16,8 +16,8 @@ bool InfectionSpreadCalculator::isInitialInfection() {
 }
 
 bool InfectionSpreadCalculator::isInfectionSpread() {
-    const int infectionRate = 70;
-    if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionRate) {
+    const int infectionSpreadRate = 5;
+    if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionSpreadRate) {
         return true;
     }
     return false;
@@ -33,16 +33,14 @@ bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
 
 bool InfectionSpreadCalculator::isDeceased() {
     const double deathRate = 1;
-    double value = MathematicalUtils::getUniformRandomNumber(0, 100);
-    //std::cout << value << "\n";
-    if (value <= deathRate) {
+    if (MathematicalUtils::getUniformRandomNumber(0, 5000) <= deathRate) {
         return true;
     }
     return false;
 }
 
 bool InfectionSpreadCalculator::isImmune() {
-    const double immuneRate = 10;
+    const double immuneRate = 2;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= immuneRate) {
         return true;
     }
@@ -50,7 +48,7 @@ bool InfectionSpreadCalculator::isImmune() {
 }
 
 int InfectionSpreadCalculator::getInfectionSpreadRadius() {
-    return 15;
+    return 35;
 }
 
 

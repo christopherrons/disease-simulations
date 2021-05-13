@@ -26,7 +26,7 @@ void Location::updateLocation() {
 }
 
 double Location::getUpdateCoordinate(const double coordinate, const double minCoordinate, const double maxCoordinate) const {
-    double largestStepSize = 0.5;
+    double largestStepSize = 4.5;
     double step = MathematicalUtils::getUniformRandomNumber(-largestStepSize, largestStepSize);
     if (coordinate + step >= maxCoordinate || coordinate + step <= minCoordinate) {
         return coordinate - 2 * step;

@@ -14,7 +14,7 @@ public:
 
     static int getSirPlotHeight();
 
-    static double nrOfGrids();
+    static double nrOfGridsPerRow();
 };
 
 

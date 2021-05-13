@@ -15,19 +15,17 @@ int main() {
     sf::Time timeSinceLastUpdate;
     double frameRate = 1.f / 60;
 
-    RandomWalkSimulation simulation(1000);
+    RandomWalkSimulation simulation(1500);
     int simulationIteration = 0;
 
     while (simulationIteration < ConfigUtils::getGridWidth()) {
         timeSinceLastUpdate += clock.restart();
-        //std::cout << "Simulation Iter: " << simulationIteration << "\n";
         sf::Event event{};
         while (windowHandler.window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 windowHandler.window.close();
         }
 
-        //  std::cout << timeSinceLastUpdate.asSeconds() << std::endl;
         if (timeSinceLastUpdate.asSeconds() >= frameRate) {
             windowHandler.window.clear();
             windowHandler.drawBackground();
