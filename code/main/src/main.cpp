@@ -1,3 +1,10 @@
+// ------------------------------------------------------------------------------
+// Disease Simulation
+//
+// (C) 2021 Christopher Herron
+// email: christopherherron09@gmail.com
+//
+// ------------------------------------------------------------------------------
 #include <SFML/Graphics.hpp>
 #include "../headers/simulations/RandomWalkSimulation.h"
 #include "iostream"
@@ -7,7 +14,6 @@
 //TODO: Add install script
 //TODO: Switch to initialization list
 int main() {
-
     int nrOfSubjects = 1500;
     WindowHandler windowHandler(nrOfSubjects);
     windowHandler.drawBackground();
