@@ -34,7 +34,6 @@ void RandomWalkSimulation::initSubjects() {
     for (int i = 0; i < this->nrOfSubjects; i++) {
         Subject subject = Subject(i);
         this->subjects.push_back(subject);
-        addSubjectToGrid(subject);
     }
 }
 
@@ -80,7 +79,8 @@ void RandomWalkSimulation::updateDiseaseSpreadBruteForce() {
                     !susceptibleSubject.getHealthStatus().isImmune() &&
                     !susceptibleSubject.getHealthStatus().isInfected()) {
                     if (MathematicalUtils::calculateDistanceBetweenSubjects(
-                            subject.getLocation(), susceptibleSubject.getLocation()) < InfectionSpreadCalculator::getInfectionSpreadRadius()) {
+                            subject.getLocation(), susceptibleSubject.getLocation()) <
+                        InfectionSpreadCalculator::getInfectionSpreadRadius()) {
                         if (InfectionSpreadCalculator::isInfectionSpread()) {
                             susceptibleSubject.getHealthStatus().setIsInfected(true);
                         }

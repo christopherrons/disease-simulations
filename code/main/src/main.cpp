@@ -8,14 +8,15 @@
 //TODO: Switch to initialization list
 int main() {
 
-    WindowHandler windowHandler;
+    int nrOfSubjects = 1500;
+    WindowHandler windowHandler(nrOfSubjects);
     windowHandler.drawBackground();
 
     sf::Clock clock;
     sf::Time timeSinceLastUpdate;
     double frameRate = 1.f / 60;
 
-    RandomWalkSimulation simulation(1500);
+    RandomWalkSimulation simulation(nrOfSubjects);
     int simulationIteration = 0;
 
     while (simulationIteration < ConfigUtils::getGridWidth()) {
@@ -32,9 +33,11 @@ int main() {
             for (auto &subject : simulation.getSubjects()) {
                 windowHandler.window.draw(subject.getSubjectTexture());
             }
-            windowHandler.setBackgroundPixelColor(simulationIteration, simulation.nrOfSubjects,
-                                                  simulation.nrOfSusceptible, simulation.nrOfDeceased,
-                                                  simulation.nrOfImmune, simulation.nrOfInfected);
+            windowHandler.drawStatistics(simulation.nrOfSusceptible, simulation.nrOfDeceased,
+                                         simulation.nrOfImmune, simulation.nrOfInfected);
+            windowHandler.drawSirPlot(simulationIteration, simulation.nrOfSubjects,
+                                      simulation.nrOfSusceptible, simulation.nrOfDeceased,
+                                      simulation.nrOfImmune, simulation.nrOfInfected);
 
             simulation.iterateSimulation();
             windowHandler.window.display();

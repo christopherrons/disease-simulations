@@ -190,7 +190,9 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: code/m
   /usr/include/SFML/Graphics/Transformable.hpp \
   /usr/include/SFML/Graphics/Vertex.hpp \
   /usr/include/SFML/Graphics/Color.hpp \
-  code/main/headers/gui/WindowHandler.h \
+  /usr/include/SFML/Graphics/Text.hpp \
+  /usr/include/SFML/Graphics/Font.hpp \
+  /usr/include/SFML/Graphics/Glyph.hpp \
   /usr/include/SFML/Graphics/Texture.hpp \
   /usr/include/SFML/Graphics/Image.hpp \
   /usr/include/c++/7/vector \
@@ -202,17 +204,6 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: code/m
   /usr/include/SFML/Window/Export.hpp \
   /usr/include/SFML/System/NonCopyable.hpp \
   /usr/include/SFML/System/Export.hpp \
-  /usr/include/SFML/Graphics/RenderWindow.hpp \
-  /usr/include/SFML/Graphics/RenderTarget.hpp \
-  /usr/include/SFML/Graphics/View.hpp \
-  /usr/include/SFML/Graphics/PrimitiveType.hpp \
-  /usr/include/SFML/Window/Window.hpp \
-  /usr/include/SFML/Window/ContextSettings.hpp \
-  /usr/include/SFML/Window/VideoMode.hpp \
-  /usr/include/SFML/Window/WindowHandle.hpp \
-  /usr/include/SFML/Window/WindowStyle.hpp \
-  /usr/include/SFML/System/Clock.hpp \
-  /usr/include/SFML/System/Time.hpp \
   /usr/include/SFML/System/String.hpp \
   /usr/include/SFML/System/Utf.hpp \
   /usr/include/c++/7/locale \
@@ -236,6 +227,24 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: code/m
   /usr/include/c++/7/iterator \
   /usr/include/c++/7/bits/stream_iterator.h \
   /usr/include/SFML/System/String.inl \
+  /usr/include/c++/7/map \
+  /usr/include/c++/7/bits/stl_tree.h \
+  /usr/include/c++/7/ext/aligned_buffer.h \
+  /usr/include/c++/7/bits/stl_map.h \
+  /usr/include/c++/7/bits/stl_multimap.h \
+  /usr/include/SFML/Graphics/VertexArray.hpp \
+  /usr/include/SFML/Graphics/PrimitiveType.hpp \
+  code/main/headers/gui/WindowHandler.h \
+  /usr/include/SFML/Graphics/RenderWindow.hpp \
+  /usr/include/SFML/Graphics/RenderTarget.hpp \
+  /usr/include/SFML/Graphics/View.hpp \
+  /usr/include/SFML/Window/Window.hpp \
+  /usr/include/SFML/Window/ContextSettings.hpp \
+  /usr/include/SFML/Window/VideoMode.hpp \
+  /usr/include/SFML/Window/WindowHandle.hpp \
+  /usr/include/SFML/Window/WindowStyle.hpp \
+  /usr/include/SFML/System/Clock.hpp \
+  /usr/include/SFML/System/Time.hpp \
   code/main/headers/utils/ConfigUtils.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: code/main/src/main.cpp \
@@ -525,7 +534,7 @@ CMakeFiles/disease_simulations.dir/code/main/src/main.cpp.o: code/main/src/main.
   code/main/headers/subjectData/Location.h \
   code/main/headers/subjectData/HealthStatus.h \
   code/main/headers/math/InfectionSpreadCalculator.h \
-  code/main/src/subjectData/Grid.h \
+  code/main/headers/subjectData/Grid.h \
   code/main/headers/subjectData/Subject.h \
   /usr/include/c++/7/iostream \
   code/main/headers/gui/WindowHandler.h
@@ -1473,14 +1482,14 @@ CMakeFiles/disease_simulations.dir/code/main/src/simulations/RandomWalkSimulatio
   code/main/headers/subjectData/Location.h \
   code/main/headers/subjectData/HealthStatus.h \
   code/main/headers/math/InfectionSpreadCalculator.h \
-  code/main/src/subjectData/Grid.h \
+  code/main/headers/subjectData/Grid.h \
   code/main/headers/subjectData/Subject.h \
   code/main/headers/math/SweepPruneAlgorithm.h \
   code/main/headers/subjectData/Subject.h
 
 CMakeFiles/disease_simulations.dir/code/main/src/subjectData/Grid.cpp.o: code/main/src/subjectData/Grid.cpp \
   /usr/include/stdc-predef.h \
-  code/main/src/subjectData/Grid.h \
+  code/main/headers/subjectData/Grid.h \
   code/main/headers/subjectData/Subject.h \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
@@ -2257,7 +2266,7 @@ code/main/src/subjectData/HealthStatus.cpp:
 
 code/main/src/math/InfectionSpreadCalculator.cpp:
 
-code/main/src/subjectData/Grid.h:
+code/main/headers/subjectData/Grid.h:
 
 code/main/headers/subjectData/HealthStatus.h:
 
@@ -2272,8 +2281,6 @@ code/main/headers/subjectData/Location.h:
 /usr/include/SFML/Graphics/Glsl.hpp:
 
 /usr/include/SFML/Graphics/Shader.hpp:
-
-/usr/include/c++/7/bits/stl_multimap.h:
 
 /usr/include/SFML/Graphics/Shape.hpp:
 
@@ -2311,11 +2318,41 @@ code/main/headers/simulations/RandomWalkSimulation.h:
 
 code/main/headers/utils/ConfigUtils.h:
 
+/usr/include/SFML/System/Time.hpp:
+
+/usr/include/SFML/System/Clock.hpp:
+
+/usr/include/SFML/Window/WindowStyle.hpp:
+
+code/main/src/utils/ConfigUtils.cpp:
+
+/usr/include/SFML/Window/WindowHandle.hpp:
+
+/usr/include/SFML/Window/VideoMode.hpp:
+
+/usr/include/SFML/Window/ContextSettings.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/SFML/System/FileInputStream.hpp:
+
+/usr/include/SFML/Graphics/RenderTarget.hpp:
+
+code/main/headers/gui/WindowHandler.h:
+
+/usr/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/include/c++/7/bits/stl_multimap.h:
+
 /usr/include/c++/7/iterator:
 
 /usr/include/SFML/System/Thread.inl:
 
 /usr/include/SFML/System/Utf.inl:
+
+/usr/include/SFML/Graphics/View.hpp:
+
+/usr/include/c++/7/tuple:
 
 /usr/include/c++/7/bits/unique_ptr.h:
 
@@ -2333,39 +2370,9 @@ code/main/headers/utils/ConfigUtils.h:
 
 /usr/include/SFML/System/String.hpp:
 
-/usr/include/SFML/System/Time.hpp:
-
-/usr/include/SFML/System/Clock.hpp:
-
-/usr/include/SFML/Window/WindowStyle.hpp:
-
-code/main/src/utils/ConfigUtils.cpp:
-
-/usr/include/SFML/Window/WindowHandle.hpp:
-
-/usr/include/SFML/Window/VideoMode.hpp:
-
-/usr/include/SFML/Window/ContextSettings.hpp:
-
-/usr/include/SFML/Graphics/PrimitiveType.hpp:
-
-/usr/include/c++/7/tuple:
-
-/usr/include/SFML/Graphics/View.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/SFML/System/FileInputStream.hpp:
-
-/usr/include/SFML/Graphics/RenderTarget.hpp:
-
 /usr/include/SFML/System/NonCopyable.hpp:
 
 /usr/include/SFML/Window/Export.hpp:
-
-/usr/include/SFML/Graphics/Font.hpp:
-
-/usr/include/SFML/Window/GlResource.hpp:
 
 /usr/include/SFML/System/Vector3.inl:
 
@@ -2377,7 +2384,9 @@ code/main/src/utils/ConfigUtils.cpp:
 
 /usr/include/c++/7/bits/stl_uninitialized.h:
 
-code/main/headers/gui/WindowHandler.h:
+/usr/include/SFML/Window/GlResource.hpp:
+
+/usr/include/SFML/Graphics/Font.hpp:
 
 /usr/include/SFML/Graphics/Color.hpp:
 
@@ -2447,9 +2456,9 @@ code/main/headers/gui/WindowHandler.h:
 
 /usr/include/c++/7/stdexcept:
 
-/usr/include/SFML/Graphics/Glyph.hpp:
-
 /usr/include/libintl.h:
+
+/usr/include/SFML/Graphics/Glyph.hpp:
 
 /usr/include/SFML/Graphics/Drawable.hpp:
 
@@ -2731,9 +2740,9 @@ code/main/src/math/SweepPruneAlgorithm.cpp:
 
 /usr/include/c++/7/bits/ostream_insert.h:
 
-/usr/include/SFML/Graphics/Text.hpp:
-
 /usr/include/SFML/Graphics/Glsl.inl:
+
+/usr/include/SFML/Graphics/Text.hpp:
 
 /usr/include/c++/7/bits/cxxabi_forced.h:
 

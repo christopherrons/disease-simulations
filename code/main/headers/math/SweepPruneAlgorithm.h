@@ -11,7 +11,8 @@
 
 class SweepPruneAlgorithm {
 public:
-    static std::vector<std::vector<Subject>>  sweepAndPrune(std::vector<Subject> &subjects);
+    static std::vector<std::vector<Subject>> sweepAndPrune(std::vector<Subject> &subjects);
+
 private:
     static void sortByAxis(std::vector<Subject> &subjects);
 };

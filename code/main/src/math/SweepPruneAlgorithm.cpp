@@ -7,7 +7,6 @@
 #include "../../headers/math/SweepPruneAlgorithm.h"
 
 
-
 std::vector<std::vector<Subject>> SweepPruneAlgorithm::sweepAndPrune(std::vector<Subject> &subjects) {
     sortByAxis(subjects);
     std::vector<std::vector<Subject>> activeIntervals;
@@ -15,7 +14,8 @@ std::vector<std::vector<Subject>> SweepPruneAlgorithm::sweepAndPrune(std::vector
     for (int i = 0; i < subjects.size(); i++) {
         if (activeInterval.empty()) {
             activeInterval.push_back(subjects[i]);
-        } else if (subjects[i].getLocation().getXCoordinate() - activeInterval[activeInterval.size()-1].getLocation().getXCoordinate() < 5) {
+        } else if (subjects[i].getLocation().getXCoordinate() -
+                   activeInterval[activeInterval.size() - 1].getLocation().getXCoordinate() < 5) {
             activeInterval.push_back(subjects[i]);
         } else {
             std::vector<Subject> previousInterval = activeInterval;

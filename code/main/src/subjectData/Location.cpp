@@ -25,7 +25,8 @@ void Location::updateLocation() {
                                             ConfigUtils::getGridHeight());
 }
 
-double Location::getUpdateCoordinate(const double coordinate, const double minCoordinate, const double maxCoordinate) const {
+double
+Location::getUpdateCoordinate(const double coordinate, const double minCoordinate, const double maxCoordinate) const {
     double largestStepSize = 4.5;
     double step = MathematicalUtils::getUniformRandomNumber(-largestStepSize, largestStepSize);
     if (coordinate + step >= maxCoordinate || coordinate + step <= minCoordinate) {

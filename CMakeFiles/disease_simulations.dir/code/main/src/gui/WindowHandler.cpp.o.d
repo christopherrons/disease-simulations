@@ -148,8 +148,8 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: \
  /usr/include/SFML/Graphics/Rect.inl \
  /usr/include/SFML/Graphics/Transformable.hpp \
  /usr/include/SFML/Graphics/Vertex.hpp \
- /usr/include/SFML/Graphics/Color.hpp \
- /home/christopher/versioned/disease-simulations/code/main/src/gui/../../headers/gui/WindowHandler.h \
+ /usr/include/SFML/Graphics/Color.hpp /usr/include/SFML/Graphics/Text.hpp \
+ /usr/include/SFML/Graphics/Font.hpp /usr/include/SFML/Graphics/Glyph.hpp \
  /usr/include/SFML/Graphics/Texture.hpp \
  /usr/include/SFML/Graphics/Image.hpp /usr/include/c++/7/vector \
  /usr/include/c++/7/bits/stl_uninitialized.h \
@@ -158,20 +158,9 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: \
  /usr/include/SFML/Window/GlResource.hpp \
  /usr/include/SFML/Window/Export.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
- /usr/include/SFML/System/Export.hpp \
- /usr/include/SFML/Graphics/RenderWindow.hpp \
- /usr/include/SFML/Graphics/RenderTarget.hpp \
- /usr/include/SFML/Graphics/View.hpp \
- /usr/include/SFML/Graphics/PrimitiveType.hpp \
- /usr/include/SFML/Window/Window.hpp \
- /usr/include/SFML/Window/ContextSettings.hpp \
- /usr/include/SFML/Window/VideoMode.hpp \
- /usr/include/SFML/Window/WindowHandle.hpp \
- /usr/include/SFML/Window/WindowStyle.hpp \
- /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Time.hpp \
- /usr/include/SFML/System/String.hpp /usr/include/SFML/System/Utf.hpp \
- /usr/include/c++/7/locale /usr/include/c++/7/bits/locale_facets_nonio.h \
- /usr/include/c++/7/ctime \
+ /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/String.hpp \
+ /usr/include/SFML/System/Utf.hpp /usr/include/c++/7/locale \
+ /usr/include/c++/7/bits/locale_facets_nonio.h /usr/include/c++/7/ctime \
  /usr/include/x86_64-linux-gnu/c++/7/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/7/bits/codecvt.h \
@@ -183,5 +172,19 @@ CMakeFiles/disease_simulations.dir/code/main/src/gui/WindowHandler.cpp.o: \
  /usr/include/c++/7/bits/uses_allocator.h \
  /usr/include/c++/7/bits/invoke.h /usr/include/SFML/System/Utf.inl \
  /usr/include/c++/7/iterator /usr/include/c++/7/bits/stream_iterator.h \
- /usr/include/SFML/System/String.inl \
+ /usr/include/SFML/System/String.inl /usr/include/c++/7/map \
+ /usr/include/c++/7/bits/stl_tree.h \
+ /usr/include/c++/7/ext/aligned_buffer.h \
+ /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h \
+ /usr/include/SFML/Graphics/VertexArray.hpp \
+ /usr/include/SFML/Graphics/PrimitiveType.hpp \
+ /home/christopher/versioned/disease-simulations/code/main/src/gui/../../headers/gui/WindowHandler.h \
+ /usr/include/SFML/Graphics/RenderWindow.hpp \
+ /usr/include/SFML/Graphics/RenderTarget.hpp \
+ /usr/include/SFML/Graphics/View.hpp /usr/include/SFML/Window/Window.hpp \
+ /usr/include/SFML/Window/ContextSettings.hpp \
+ /usr/include/SFML/Window/VideoMode.hpp \
+ /usr/include/SFML/Window/WindowHandle.hpp \
+ /usr/include/SFML/Window/WindowStyle.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Time.hpp \
  /home/christopher/versioned/disease-simulations/code/main/src/gui/../../headers/utils/ConfigUtils.h

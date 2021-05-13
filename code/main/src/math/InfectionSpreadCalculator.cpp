@@ -33,14 +33,14 @@ bool InfectionSpreadCalculator::isRecovered(int daysSickWeight) {
 
 bool InfectionSpreadCalculator::isDeceased() {
     const double deathRate = 1;
-    if (MathematicalUtils::getUniformRandomNumber(0, 5000) <= deathRate) {
+    if (MathematicalUtils::getUniformRandomNumber(0, 10000) <= deathRate) {
         return true;
     }
     return false;
 }
 
 bool InfectionSpreadCalculator::isImmune() {
-    const double immuneRate = 2;
+    const double immuneRate = 3;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= immuneRate) {
         return true;
     }
