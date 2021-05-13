@@ -13,6 +13,7 @@
 
 int main() {
     int nrOfSubjects = 1500;
+
     WindowHandler windowHandler(nrOfSubjects);
     windowHandler.drawBackground();
 
