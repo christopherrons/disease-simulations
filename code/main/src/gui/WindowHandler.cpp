@@ -11,8 +11,7 @@
 
 WindowHandler::WindowHandler(double nrOfSubjects)
         : nrOfSubjects(nrOfSubjects),
-          window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui",
-                 sf::Style::Fullscreen),
+          window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui"),
           backgroundTexture(sf::Texture()),
           backgroundSprite(sf::Sprite()),
           textFont(sf::Font()),

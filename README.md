@@ -17,14 +17,12 @@ The rate at which the subjects change states is dependent on the following varia
 * Step length when walking randomly
 
 # Installation Linux Ubuntu
-The simulation requires SFML to run and FFmpeg to create a recording. Simple run the setup.sh script to download SFML:
-`./setup.sh`
+The simulation requires SFML to run and FFmpeg to create a recording. Simple run the setup.sh script to download SFML:`./setup.sh`
 
 # Running the Simulation
-<<<<<<< Updated upstream
-The simulation is built using CMAKE and can be built and executed using the buildAndExecute.sh script.
-`./buildAndExecute.sh`
-=======
 The simulation is built using CMAKE and can be built and executed using the buildAndExecute.sh script:
 `./buildAndExecute.sh`
->>>>>>> Stashed changes
+
+# Create a Recording
+When running the app opt for recording. Once the simulation is finished run the createRecording.sh script:
+`./createRecording.sh`

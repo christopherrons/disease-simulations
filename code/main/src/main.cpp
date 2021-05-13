@@ -14,7 +14,7 @@
 int main() {
 
     std::string recordOption;
-    std::cout << "\nType record if you wish to record: ";
+    std::cout << "\nType record if you wish to record else no: ";
     std::cin >> recordOption;
 
     int nrOfSubjects = 1500;
@@ -29,6 +29,10 @@ int main() {
 
     int simulationIteration = 0;
     windowHandler.draw(simulation, simulationIteration);
+    if (recordOption == "record") {
+        windowHandler.takeScreenShot(simulationIteration);
+    }
+
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
     while (simulationIteration < ConfigUtils::getGridWidth()) {
         timeSinceLastUpdate += clock.restart();

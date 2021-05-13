@@ -16,7 +16,7 @@ bool InfectionSpreadCalculator::isInitialInfection() {
 }
 
 bool InfectionSpreadCalculator::isInfectionSpread() {
-    const int infectionSpreadRate = 7;
+    const int infectionSpreadRate = 10;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= infectionSpreadRate) {
         return true;
     }
