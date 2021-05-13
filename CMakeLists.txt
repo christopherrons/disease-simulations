@@ -19,7 +19,7 @@ add_executable(
         code/main/src/math/InfectionSpreadCalculator.cpp
         code/main/headers/math/InfectionSpreadCalculator.h
         code/main/src/subjectData/HealthStatus.cpp
-        code/main/headers/subjectData/HealthStatus.h code/main/src/gui/WindowHandler.cpp code/main/headers/gui/WindowHandler.h code/main/src/math/SweepPruneAlgorithm.cpp code/main/headers/math/SweepPruneAlgorithm.h code/main/src/subjectData/Grid.cpp code/main/src/subjectData/Grid.h)
+        code/main/headers/subjectData/HealthStatus.h code/main/src/gui/WindowHandler.cpp code/main/headers/gui/WindowHandler.h code/main/src/math/SweepPruneAlgorithm.cpp code/main/headers/math/SweepPruneAlgorithm.h code/main/src/subjectData/Grid.cpp code/main/headers/subjectData/Grid.h)
 
 target_link_libraries(disease_simulations
         -lsfml-graphics

@@ -7,7 +7,7 @@
 
 #include <vector>
 #include "../subjectData/Subject.h"
-#include "../../src/subjectData/Grid.h"
+#include "../subjectData/Grid.h"
 
 class RandomWalkSimulation {
 public:

@@ -2,7 +2,7 @@
 // Created by christopher on 2021-05-12.
 //
 
-#include "Grid.h"
+#include "../../headers/subjectData/Grid.h"
 
 
 Grid::Grid(double xCoordinateUpperLower, double xCoordinateUpperBound, double yCoordinateUpperLower,

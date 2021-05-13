@@ -17,8 +17,7 @@ WindowHandler::WindowHandler()
 }
 
 //TODO: Clean up
-void
-WindowHandler::setBackgroundPixelColor(const int simulationIteration, const int nrOfSubjects, const int nrOfSusceptible,
+void WindowHandler::setBackgroundPixelColor(const int simulationIteration, const int nrOfSubjects, const int nrOfSusceptible,
                                        const int nrOfDeceased, const int nrOfImmune, const int nrOfInfected) {
     sf::Image image = this->backgroundTexture.copyToImage();
     int maxHeight = ConfigUtils::getSirPlotHeight();

@@ -6,14 +6,12 @@
 #define DISEASE_SIMULATIONS_GRID_H
 
 
-#include "../../headers/subjectData/Subject.h"
+#include "Subject.h"
 
 class Grid {
 public:
     Grid(double xCoordinateUpperLower, double xCoordinateUpperBound, double yCoordinateUpperLower,
          double yCoordinateUpperBound);
-
-    void addToGrid(const Subject &subject);
 
     std::vector<Subject> subjectsInGrid;
 
