@@ -88,14 +88,14 @@ void WindowHandler::drawSirPlot(const int simulationIteration, const int nrOfSub
 }
 
 void WindowHandler::loadBackground() {
-    if (!this->backgroundTexture.loadFromFile("code/resources/images/background.png")) {
+    if (!this->backgroundTexture.loadFromFile("../code/resources/images/background.png")) {
         std::cout << "Failed to load background" << std::endl;
     }
     this->backgroundSprite.setTexture(this->backgroundTexture);
 }
 
 void WindowHandler::loadFont() {
-    if (this->textFont.loadFromFile("code/resources/fonts/OpenSans-Regular.ttf")) {
+    if (this->textFont.loadFromFile("../code/resources/fonts/OpenSans-Regular.ttf")) {
         std::cout << "Failed to load font" << std::endl;
     }
 }

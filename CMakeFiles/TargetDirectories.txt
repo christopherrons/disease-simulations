@@ -1,3 +1,0 @@
-/home/christopher/versioned/disease-simulations/CMakeFiles/rebuild_cache.dir
-/home/christopher/versioned/disease-simulations/CMakeFiles/disease_simulations.dir
-/home/christopher/versioned/disease-simulations/CMakeFiles/edit_cache.dir
