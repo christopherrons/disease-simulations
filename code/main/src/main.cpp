@@ -20,7 +20,6 @@ int main() {
     int nrOfSubjects = 1500;
 
     WindowHandler windowHandler(nrOfSubjects);
-    windowHandler.drawBackground();
 
     sf::Clock clock;
     sf::Time timeSinceLastUpdate;

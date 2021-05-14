@@ -37,7 +37,7 @@ sf::Color ConfigUtils::deseasedColor() {
 }
 
 float ConfigUtils::simulationFrameRate() {
-    return 1.f / 60;
+    return 1.f / 30;
 }
 
 

@@ -40,7 +40,7 @@ bool InfectionSpreadCalculator::isDeceased() {
 }
 
 bool InfectionSpreadCalculator::isImmune() {
-    const double immuneRate = 3;
+    const double immuneRate = 2.5;
     if (MathematicalUtils::getUniformRandomNumber(0, 100) <= immuneRate) {
         return true;
     }

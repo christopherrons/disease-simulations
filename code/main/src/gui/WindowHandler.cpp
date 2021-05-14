@@ -51,7 +51,7 @@ WindowHandler::WindowHandler(double nrOfSubjects)
     nrOfDeceasedText.setCharacterSize(18);
     nrOfDeceasedText.setStyle(sf::Text::Style::Bold);
 
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(30);
     loadBackground();
     loadFont();
 }
