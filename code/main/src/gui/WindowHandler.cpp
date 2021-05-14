@@ -11,7 +11,7 @@
 
 WindowHandler::WindowHandler(double nrOfSubjects)
         : nrOfSubjects(nrOfSubjects),
-          window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "SFML gui"),
+          window(sf::VideoMode(ConfigUtils::getGridWidth(), ConfigUtils::getGridHeight()), "Random Walk Simulation", sf::Style::Fullscreen),
           backgroundTexture(sf::Texture()),
           backgroundSprite(sf::Sprite()),
           textFont(sf::Font()),
