@@ -1,6 +1,9 @@
 # Disease Spread Simulation
 This is a random walk simulation of how a disease spreads in a population. 
 
+# Youtube Link
+https://www.youtube.com/watch?v=zxPBKeA46sE
+
 # Simulation Parameters
 A subject in the population can be in one if four states:
 1. Susceptible
